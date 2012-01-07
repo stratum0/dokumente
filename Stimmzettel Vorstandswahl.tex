@@ -1,0 +1,51 @@
+\documentclass[a5paper,12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{tabularx}
+\usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
+%\usepackage{textcomp} % für €
+%\usepackage[cm]{fullpage}
+
+\newenvironment{kandidaten}[1]{
+  \subsection*{#1}
+  \tabularx{\textwidth}{|l|X|}
+    \hline
+}{
+  \endtabularx
+}
+\newcommand{\wahltabellenzeile}[1]{#1 \rule[-3pt]{0pt}{16pt}\phantom{asdf} & \\ \hline}
+\newcommand{\wahltabelle}[1]{
+  \begin{kandidaten}{#1}
+    \wahltabellenzeile{Kandidat 1}
+    \wahltabellenzeile{Kandidat 2}
+    \wahltabellenzeile{Kandidat 3}
+  \end{kandidaten}
+}
+
+\pagestyle{empty}
+\usepackage[top=1cm, bottom=1cm]{geometry}
+%\addtolength{\pageheight}{60pt}
+%\setlength{\voffset}{-12pt}
+
+\begin{document}
+\begin{center}
+  {\Large\bfseries Vorstandswahl Stratum~0~e.~V. \\[0.5em] Stimmzettel}
+  \\[1em]
+  {\large 8. Januar 2012}
+\end{center}
+
+
+\wahltabelle{1. Vorsitzender}
+\wahltabelle{stellvertretender Vorsitzender}
+\wahltabelle{Kassenwart}
+\begin{kandidaten}{Beisitzer}
+  \wahltabellenzeile{Kandidat 1}
+  \wahltabellenzeile{Kandidat 2}
+  \wahltabellenzeile{Kandidat 3}
+  \wahltabellenzeile{Kandidat 4}
+  \wahltabellenzeile{Kandidat 5}
+  \wahltabellenzeile{Kandidat 6}
+\end{kandidaten}
+
+\end{document}

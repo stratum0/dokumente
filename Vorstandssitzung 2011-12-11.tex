@@ -4,15 +4,28 @@
 \usepackage[ngerman]{babel}
 \usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
 \usepackage{textcomp} % notfalls für €
+\usepackage{lastpage}
+\usepackage{fancyhdr}
 
 \renewcommand{\labelenumi}{(\arabic{enumi})}
 \renewcommand{\labelitemi}{--}
 \makeatletter\renewcommand*\thesection{TOP\ \@arabic\c@section}\makeatother
 \setcounter{section}{-1}
 
-\title{Vorstandssitzung des Stratum~0~e.~V.}
-\date{11. Dezember 2011}
+\newcommand{\mytitle}{Vorstandssitzung des Stratum~0~e.~V.}
+\newcommand{\mydate}{11. Dezember 2011}
 
+\title{\mytitle}
+\date{\mydate}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\mytitle{} -- \mydate}
+\cfoot{Seite \thepage\ von \pageref{LastPage}}
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf{}%
+  \fancyfoot[C]{Seite \thepage\ von \pageref{LastPage}}%
+}
 \begin{document}
 \maketitle
 

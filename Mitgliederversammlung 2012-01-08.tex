@@ -1,0 +1,175 @@
+% vim:tw=80 ts=2 et sw=2 indentexpr= :
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
+\usepackage{textcomp} % notfalls für €
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=false]{hyperref}
+
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\renewcommand{\labelitemi}{--}
+\makeatletter\renewcommand*\thesection{TOP\ \@arabic\c@section}\makeatother
+\newcommand{\abstimmung}[4]{\marginpar{\footnotesize #1:\\#2~pro, #3~con, %
+  #4~neutral}}
+\setcounter{section}{-1}
+\addtolength{\textwidth}{-10pt}
+\addtolength{\marginparwidth}{10pt}
+
+\newcommand{\mytitle}{Mitgliederversammlung des Stratum~0~e.~V.}
+\newcommand{\mydate}{8. Januar 2012}
+
+\title{\mytitle}
+\date{\mydate}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\mytitle{} -- \mydate}
+\cfoot{Seite \thepage\ von \pageref{LastPage}}
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf{}%
+  \fancyfoot[C]{Seite \thepage\ von \pageref{LastPage}}%
+}
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%
+%% TOP 0 %%
+%%%%%%%%%%%
+\section{Eröffnung}
+\begin{description}
+  \item[Zeit:] 9. Januar 2012, 15:00
+  \item[Ort:] beyti Grillhaus, Bohlweg; später Plaza des Informatikzentrums,
+    Mühlenpfordtstraße
+  \item[Anwesend:] 28 akkreditierte Mitglieder, davon 27 mit Stimmrecht
+  \item[Wahl des Versammlungsleiters:] Valodim durch Handzeichen; nimmt die 
+    Wahl an
+  \item[Protokoll:] rohieb erklärt sich bereit, keine Gegenstimmen
+  \item[Veranstaltung eröffnet] durch den Versammlungsleiter um 15:50
+  \item[Tagesordnung:] ohne Gegenstimmen und Enthaltungen angenommen
+\end{description}
+
+%%%%%%%%%%%
+%% TOP 1 %%
+%%%%%%%%%%%
+\section{Berichte}
+\subsection{Bericht des Vorstandes}
+Valodim stellt zuerst den neu hinzugekommenen Mitglieder die amtierenden
+Vorstandsmitglieder vor. Darauf fasst er die Aktivitäten des Vorstands im
+vergangenen Jahr zusammen:
+\begin{description}
+  \item[30. August 2010:] 1. Vorstandssitzung.\footnote{Vollständiges
+    Protokoll: \url{https://stratum0.org/index.php/Vorstandssitzung_2011-08-30}}
+    Themen: Überblick über Immobiliensituation, Besichtigungen, Eintragung,
+    Konto.
+  \item[24. September 2012:] positive Rückmeldung vom Amtsgericht über die
+    Eintragung ins Vereinsregister
+  \item[4. Oktober 2010:] Eröffnung eines Vereinskontos bei der
+    Braunschweigischen Landessparkasse, verlief nicht ganz reibungslos aufgrund
+    der laufenden EDV-Umstellung der Bank
+  \item[30. November 2010:] Erster Kontoauszug
+  \item[11. Dezember 2010:] 2. Vorstandssitzung.\footnote{Vollständiges
+    Protokoll: \url{https://stratum0.org/index.php/Vorstandssitzung_2011-12-11}}
+    Themen: Finanzen, Bericht Raum-Situation, Mitgliederversammlung, 
+    Weihnachtsfeier
+  \item[27.-20. Dezember 2010:] Streaming der Vorträge vom 28. Chaos
+    Communication Congress im Rahmen des Programms "`No Nerd Left Behind"', in
+    Zusammenarbeit mit der Fachgruppe Informatik der TU Braunschweig. Es waren
+    auch viele Nicht-Studenten in den Räumen der TU anzutreffen.
+\end{description}
+
+Die Suche nach Räumlichkeiten lief nebenher und stagnierte teilweise, da der 
+Immobilienmarkt kaum veränderlich war. Darum wurden auf der 2. Vorstandssitzung
+wöchentliche Treffen zur Beobachtung des Immobilienmarktes angeregt, von denen
+das erste Treffen am 18. Dezember auch gleich zur Besichtigung der Räumlichkeit
+an der Hamburger Straße am 20. Dezember bzw. in wiederholter Form am 3. Januar
+führte (siehe \ref{top:space}).
+
+Gleichzeitig waren während des Jahres im Rahmen der Aktion "`Zeitabgleich"'
+mehrere Mitglieder des Vereins in verschiedenen Hackerspaces in Deutschland zu
+Gast und haben Werbung für unseren Verein gemacht: Neo Bechstein, ktrask und
+m00lean Anfang September beim \emph{chaosdorf} in Düsseldorf zum Kongress 
+OpenRheinRuhr, whisp in der \emph{c-base} in Berlin, mehrere Mitglieder in 
+Hannover bei der \emph{leitstelle511} Anfang August, und blinry live auf dem 
+28. Chaos Communication Congress in Berlin Ende Dezember.
+
+Außerdem wurde auf der 1. Vorstandssitzung der Beschluss getroffen, zuerst keine
+Gemeinnützigkeit beim Finanzamt zu beantragen, um die Rückabwicklung der
+Mitgliedsbeiträge zum Wohle der Mitglieder im Falle eines Scheiterns des
+Vereins einfacher zu gestalten. Andernfalls könnten die eingenommen Beiträge nur
+einem weiteren, gemeinnützigen Verein zu Gute kommen. Grundsätzlich wird der
+Status der Gemeinnützigkeit aber weiterhin angestrebt, sobald der Verein stabil
+läuft und eine Räumlichkeit gefunden ist. Aus Valodims Sicht wird aber dieser
+Grund gegen die Gemeinnützigkeit aktuell im Laufe der Zeit immer weiter
+hinfällig. Außerdem ist die Gemeinnützigkeit zwar in der Satzung festgehalten,
+aber sie interessiert kaum jemanden, solange der Verein keine
+Steuervergünstigungen beim Finanzamt beantragt.
+
+\section{Bericht des Schatzmeisters und der Kassenprüfer}
+Wie schon erwähnt hat sich die Einrichtung des Kontos etwas verzögert, wodurch
+erste Überweisungen von Mitgliedern nicht ausgeführt werden konnten. Dies ist
+aber inzwischen nach einem nochmaligen Gespräch des Vorstandes mit der Bank
+behoben. Außerdem hat sich gezeigt, dass uns pro eingehender Überweisung 5 Cent
+Kontoführungsgebühr angerechnet werden, worüber der Vorstand bei der Eröffnung
+des Kontos nicht aufgeklärt wurde. Der Schatzmeister wird diese Situation noch
+zeitnah mit der Bank besprechen; es besteht wohl diesbezüglich
+Verhandlungsbereitschaft seitens der Bank.
+
+An Mitgliedsbeiträgen sind seit Gründung des Vereins im Juni 2010 bis zum 
+Zeitpunkt der letzten Kontenübersicht einige Tag vor der Versammlung bisher 
+insgesamt 2.088€ überwiesen worden. Der Schatzmeister weist aber auch scharf
+darauf hin, dass zu diesem Zeitpunkt noch 1.490€ an offenen Beiträgen
+ausstanden. Davon wurde wiederum vor Beginn der Versammlung ein Großteil durch
+Barzahlung ausgeglichen, sodass nun noch etwa 200€ an Forderungen von
+Mitgliedern offen sind. Außerdem sind dem Verein 252{,}79€ an Spendengelder
+zugekommen.
+
+Auf der anderen Seite sind als Ausgaben aufgelaufen:
+\begin{itemize}
+  \item 26{,}78€ Notarkosten für die Eintragung,
+  \item 8{,}90€ Kontoführungsgebühr
+  \item außerdem noch etwa 70€ Bearbeitungskosten des Amtsgerichts für die
+    Eintragung ins Vereinsregister, die bisher von Valodim ausgelegt wurden, und
+    die er noch nicht vom Verein zurück erhalten hat.
+\end{itemize}
+
+Die Kassenprüfer konnten alle Kontenbewegungen nachvollziehen, bis auf den
+genauen Betrag der Spenden, der sich in ihrer Rechnung minimal unterscheidet,
+was wohl auf einen Übertragungsfehler seitens des Schatzmeisters zurückzuführen
+ist. Das verbuchte Gesamtguthaben am Beginn der Veranstaltung beläuft sich 
+demnach auf 3.320€.
+
+Die Kassenprüfer merken noch an, dass die Aufzeichnungen des Schatzmeisters
+etwas schwer nachzuvollziehen sind. Sie erklären sich aber bereit, zusammen
+mit dem Schatzmeister eine nachvollziehbarere Methode zu finden.
+
+\subsection{Entlastung des Vorstandes und des Schatzmeisters}
+Terminar spricht hier den Punkt an, dass zwischendurch teilweise zu viel Stille
+herrschte und der Vorstand nur schwer zu erreichen war. Er sieht es nicht als
+grundsätzliches Problem an, wenn zwischendurch Funkstille herrscht, und es
+nichts zu berichten gibt, nur sollten voraussehbarere Abwesenheitszeiten
+angekündigt und eine Vertretung bestellt werden, sodass zumindest zu jedem
+Zeitpunkt eine minimale Erreichbarkeit besteht. Anscheinend gab es zum selben
+Zeitpunkt auch noch technische Probleme auf der öffentlichen Mailingliste,
+m00lean wirft aber ein, dass diese schnell behoben wurden. Grundsätzlich
+schließen sich aber Valodim und Neo Bechstein den Ausführungen von Terminar
+an und sehen Optimierungsbedarf in solchen Fällen.
+
+\abstimmung{Entlastung des Vorstands}{18}{0}{9}
+Für die Entlastung des Vorstandes wird per Handzeichen abgestimmt. 18 Entitäten
+stimmen dafür, 9 enthalten sich, es gibt keine Gegenstimmen. \\
+
+\emph{[16:26 bis 17:05: Pause, Relokation auf die Plaza des Informatikzentrums]}
+
+
+
+
+
+
+\begin{description}
+\item[Veranstaltung geschlossen] durch den Versammlungsleiter um 20:02.
+\end{description}
+
+\end{document}

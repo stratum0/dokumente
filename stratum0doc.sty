@@ -6,7 +6,10 @@
 
 %% Package options
 \makeatletter
-  \DeclareOption{transcript}{\def\@sndsectionmark{TOP}}
+  \DeclareOption{transcript}{%
+    \def\@sndsectionmark{TOP}%
+    \setcounter{section}{-1}% start with TOP 0 for more geekness
+  }
   \DeclareOption{legal}{\def\@sndsectionmark{§}}
   \ExecuteOptions{transcript}
   \ProcessOptions\relax
@@ -34,6 +37,11 @@
     \@sndsectionmark\ \@arabic\c@section
 }
 \makeatother
+
+%% votes
+\newcommand{\vote}[4]{%
+  \marginpar{\footnotesize #1:\\#2~pro, #3~con, #4~neutral}%
+}
 
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}

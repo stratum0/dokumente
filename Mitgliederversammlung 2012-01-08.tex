@@ -5,33 +5,15 @@
 \usepackage[ngerman]{babel}
 \usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
 \usepackage{textcomp} % notfalls für €
-\usepackage{lastpage}
-\usepackage{fancyhdr}
+\usepackage{stratum0doc}
 \usepackage[colorlinks=false]{hyperref}
 
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\renewcommand{\labelitemi}{--}
-\makeatletter\renewcommand*\thesection{TOP\ \@arabic\c@section}\makeatother
-\newcommand{\abstimmung}[4]{\marginpar{\footnotesize #1:\\#2~pro, #3~con, %
-  #4~neutral}}
-\setcounter{section}{-1}
 \addtolength{\textwidth}{-10pt}
 \addtolength{\marginparwidth}{10pt}
 
-\newcommand{\mytitle}{Mitgliederversammlung des Stratum~0~e.~V.}
-\newcommand{\mydate}{8. Januar 2012}
+\title{1.~Mitgliederversammlung des Stratum~0~e.~V.}
+\date{8.~Januar~2012}
 
-\title{\mytitle}
-\date{\mydate}
-\pagestyle{fancy}
-\fancyhf{}
-\chead{\mytitle{} -- \mydate}
-\cfoot{Seite \thepage\ von \pageref{LastPage}}
-\fancypagestyle{plain}{%
-  \renewcommand{\headrulewidth}{0pt}%
-  \fancyhf{}%
-  \fancyfoot[C]{Seite \thepage\ von \pageref{LastPage}}%
-}
 \begin{document}
 \maketitle
 
@@ -44,7 +26,7 @@
   \item[Ort:] beyti Grillhaus, Bohlweg; später Plaza des Informatikzentrums,
     Mühlenpfordtstraße
   \item[Anwesend:] 28 akkreditierte Mitglieder, davon 27 mit Stimmrecht
-  \item[Wahl des Versammlungsleiters:] Valodim durch Handzeichen; nimmt die 
+  \item[Wahl des Versammlungsleiters:] Valodim durch Handzeichen; nimmt die
     Wahl an
   \item[Protokoll:] rohieb erklärt sich bereit, keine Gegenstimmen
   \item[Veranstaltung eröffnet] durch den Versammlungsleiter um 15:50
@@ -60,8 +42,8 @@ Valodim stellt zuerst den neu hinzugekommenen Mitglieder die amtierenden
 Vorstandsmitglieder vor. Darauf fasst er die Aktivitäten des Vorstands im
 vergangenen Jahr zusammen:
 \begin{description}
-  \item[30. August 2010:] 1. Vorstandssitzung.\footnote{Vollständiges
-    Protokoll: \url{https://stratum0.org/index.php/Vorstandssitzung_2011-08-30}}
+  \item[30. August 2010:] 1. Vorstandssitzung.\footnote{Vollständiges Protokoll:
+    \url{https://stratum0.org/index.php/Vorstandssitzung\_2011-08-30}}
     Themen: Überblick über Immobiliensituation, Besichtigungen, Eintragung,
     Konto.
   \item[24. September 2012:] positive Rückmeldung vom Amtsgericht über die
@@ -71,8 +53,9 @@ vergangenen Jahr zusammen:
     der laufenden EDV-Umstellung der Bank
   \item[30. November 2010:] Erster Kontoauszug
   \item[11. Dezember 2010:] 2. Vorstandssitzung.\footnote{Vollständiges
-    Protokoll: \url{https://stratum0.org/index.php/Vorstandssitzung_2011-12-11}}
-    Themen: Finanzen, Bericht Raum-Situation, Mitgliederversammlung, 
+    Protokoll:
+    \url{https://stratum0.org/index.php/Vorstandssitzung\_2011-12-11}}
+    Themen: Finanzen, Bericht Raum-Situation, Mitgliederversammlung,
     Weihnachtsfeier
   \item[27.-20. Dezember 2010:] Streaming der Vorträge vom 28. Chaos
     Communication Congress im Rahmen des Programms "`No Nerd Left Behind"', in
@@ -80,7 +63,7 @@ vergangenen Jahr zusammen:
     auch viele Nicht-Studenten in den Räumen der TU anzutreffen.
 \end{description}
 
-Die Suche nach Räumlichkeiten lief nebenher und stagnierte teilweise, da der 
+Die Suche nach Räumlichkeiten lief nebenher und stagnierte teilweise, da der
 Immobilienmarkt kaum veränderlich war. Darum wurden auf der 2. Vorstandssitzung
 wöchentliche Treffen zur Beobachtung des Immobilienmarktes angeregt, von denen
 das erste Treffen am 18. Dezember auch gleich zur Besichtigung der Räumlichkeit
@@ -90,9 +73,9 @@ führte (siehe \ref{top:space}).
 Gleichzeitig waren während des Jahres im Rahmen der Aktion "`Zeitabgleich"'
 mehrere Mitglieder des Vereins in verschiedenen Hackerspaces in Deutschland zu
 Gast und haben Werbung für unseren Verein gemacht: Neo Bechstein, ktrask und
-m00lean Anfang September beim \emph{chaosdorf} in Düsseldorf zum Kongress 
-OpenRheinRuhr, whisp in der \emph{c-base} in Berlin, mehrere Mitglieder in 
-Hannover bei der \emph{leitstelle511} Anfang August, und blinry live auf dem 
+m00lean Anfang September beim \emph{chaosdorf} in Düsseldorf zum Kongress
+OpenRheinRuhr, whisp in der \emph{c-base} in Berlin, mehrere Mitglieder in
+Hannover bei der \emph{leitstelle511} Anfang August, und blinry live auf dem
 28. Chaos Communication Congress in Berlin Ende Dezember.
 
 Außerdem wurde auf der 1. Vorstandssitzung der Beschluss getroffen, zuerst keine
@@ -117,8 +100,8 @@ des Kontos nicht aufgeklärt wurde. Der Schatzmeister wird diese Situation noch
 zeitnah mit der Bank besprechen; es besteht wohl diesbezüglich
 Verhandlungsbereitschaft seitens der Bank.
 
-An Mitgliedsbeiträgen sind seit Gründung des Vereins im Juni 2010 bis zum 
-Zeitpunkt der letzten Kontenübersicht einige Tag vor der Versammlung bisher 
+An Mitgliedsbeiträgen sind seit Gründung des Vereins im Juni 2010 bis zum
+Zeitpunkt der letzten Kontenübersicht einige Tag vor der Versammlung bisher
 insgesamt 2.088€ überwiesen worden. Der Schatzmeister weist aber auch scharf
 darauf hin, dass zu diesem Zeitpunkt noch 1.490€ an offenen Beiträgen
 ausstanden. Davon wurde wiederum vor Beginn der Versammlung ein Großteil durch
@@ -138,7 +121,7 @@ Auf der anderen Seite sind als Ausgaben aufgelaufen:
 Die Kassenprüfer konnten alle Kontenbewegungen nachvollziehen, bis auf den
 genauen Betrag der Spenden, der sich in ihrer Rechnung minimal unterscheidet,
 was wohl auf einen Übertragungsfehler seitens des Schatzmeisters zurückzuführen
-ist. Das verbuchte Gesamtguthaben am Beginn der Veranstaltung beläuft sich 
+ist. Das verbuchte Gesamtguthaben am Beginn der Veranstaltung beläuft sich
 demnach auf 3.320€.
 
 Die Kassenprüfer merken noch an, dass die Aufzeichnungen des Schatzmeisters
@@ -157,7 +140,7 @@ m00lean wirft aber ein, dass diese schnell behoben wurden. Grundsätzlich
 schließen sich aber Valodim und Neo Bechstein den Ausführungen von Terminar
 an und sehen Optimierungsbedarf in solchen Fällen.
 
-\abstimmung{Entlastung des Vorstands}{18}{0}{9}
+\vote{Entlastung des Vorstands}{18}{0}{9}
 Für die Entlastung des Vorstandes wird per Handzeichen abgestimmt. 18 Entitäten
 stimmen dafür, 9 enthalten sich, es gibt keine Gegenstimmen. \\
 

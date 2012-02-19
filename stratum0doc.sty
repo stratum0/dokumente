@@ -31,8 +31,9 @@
 \renewcommand{\labelenumi}{(\arabic{enumi})}
 \renewcommand{\labelitemi}{--}
 \renewcommand{\thesection}{%
-    \@sndsectionmark\ \@arabic\c@section
+  \@sndsectionmark\ \@arabic\c@section
 }
+\setcounter{section}{-1} % Hacker fangen ab 0 an zu zählen.
 \makeatother
 
 \RequirePackage{fancyhdr}

@@ -36,6 +36,15 @@
 \setcounter{section}{-1} % Hacker fangen ab 0 an zu zählen.
 \makeatother
 
+%% votes
+\newcommand{\vote}[4]{%
+  \marginpar{\footnotesize #1:\\#2~pro, #3~con, #4~neutral}%
+}
+%% consents without vote
+\newcommand{\consent}[1]{%
+  \marginpar{\footnotesize #1}%
+}
+
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 

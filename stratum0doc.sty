@@ -44,6 +44,18 @@
 \newcommand{\consensus}[1]{%
   \marginpar{\footnotesize #1}%
 }
+%% no vote at all, disagreement
+\newcommand{\novote}{%
+  \marginpar{\footnotesize Kein Beschluss}%
+}
+%% postponed agenda items
+\newcommand{\postponed}{%
+  \marginpar{\footnotesize Beschluss vertagt}%
+}
+%% withdrawn agenda items
+\newcommand{\withdrawn}{%
+  \marginpar{\footnotesize TOP zurückgezogen}%
+}
 
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}

@@ -1,0 +1,77 @@
+\documentclass[a5paper,10pt,headings=small]{scrartcl}
+\usepackage[portrait,top=1.5cm,left=2cm,bottom=1.5cm,right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp} % für €
+\usepackage{tabularx}
+\usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
+\usepackage{wasysym} % für \Square
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+
+\pagestyle{empty}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex}
+\newlength{\signskiplen}
+\setlength{\signskiplen}{2ex}
+\newcommand{\signskip}{\rule{0pt}{18pt}}
+%\newcommand{\hinweis}[1]{\begin{center}%
+%  \framebox[.9\textwidth]{\parbox{.9\textwidth}{#1}}%
+%\end{center}%
+%}
+\newcommand{\hinweis}[1]{\emph{#1}}
+
+\title{Mitgliedsantrag}
+
+\begin{document}
+\begin{tabular}{@{}c@{\phantom{m}}l}
+  \multirow{4}{*}{
+    \includegraphics[height=44pt]{stratum0-logo.eps}
+  } &
+  Vorstand des Stratum~0~e.\,V. \\
+  & Hamburger Straße 273a \\
+  & 38112 Braunschweig \\
+  & vorstand@stratum0.org
+\end{tabular}
+
+% angepasster Header... \maketitle ist Mist auf a5paper
+\begin{center}
+  \Large \titlefont \makeatletter \@title \makeatother
+\end{center}
+
+\emph{Mitgliedsanträge können auch formlos per E-Mail an
+\emph{vorstand@stratum0.org} gestellt werden, unter Angabe der hier
+aufgeführten Daten.}
+
+\section*{Persönliche Daten}
+\begin{description}
+  \item[(Real-)Name:] \hrulefill% \signskip
+  \item[E-Mail-Adresse:] \hrulefill \signskip
+\end{description}
+\hinweis{Alle Änderungen dieser Daten müssen dem Vorstand gemeldet werden. Falls
+der Vorstand dich in wich\-ti\-gen Fällen nicht erreichen kann, hat dies unter
+Umständen deinen Aus\-schluss als Mitglied zur Folge.}
+
+\section*{Mitgliedsbeitrag}
+\begin{description}
+  \item[\Square] Ich möchte den vollen Beitrag von \textbf{20€ pro Monat} zahlen.
+  \item[\Square] Ich gehe zur Schule, studiere, empfange Sozialgeld oder ALG~II
+    einschließ\-lich Leistungen nach §~22 ohne Zuschläge oder nach §~24 SGB~II,
+    oder beziehe Ausbildungsförderung nach dem BAföG und möchte den ermäßigten
+    Beitrag von \textbf{12€ pro Monat} zahlen. Ein entsprechender Nachweis muss
+    dem Vorstand auf Verlangen zugänglich gemacht werden.
+  \item[\Square] Ich kann aus finanziellen Gründen den regulären Beitrag nicht
+    aufbringen und beantrage nach §3~Abs.~3 der Beitragsordnung eine Ermäßigung
+    des Betrags. Dieser Antrag gilt für ein Jahr und kann erneuert werden. \\
+    \Square~Befreiung \hfill
+    \Square~Ermäßigung auf: \hrulefill~€\hfill\phantom{a}
+\end{description}
+
+Datum, Unterschrift: \hrulefill\signskip
+
+\hinweis{Sobald der Vorstand über deinen Antrag entschieden hat, bekommst du per
+E-Mail Nachricht über deine Aufnahme und erhältst weitere Informationen.}
+
+\end{document}
+% vim: set tw=80 et sw=2 ts=2:

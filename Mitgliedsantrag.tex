@@ -16,10 +16,6 @@
 \newlength{\signskiplen}
 \setlength{\signskiplen}{2ex}
 \newcommand{\signskip}{\rule{0pt}{18pt}}
-%\newcommand{\hinweis}[1]{\begin{center}%
-%  \framebox[.9\textwidth]{\parbox{.9\textwidth}{#1}}%
-%\end{center}%
-%}
 \newcommand{\hinweis}[1]{\emph{#1}}
 
 \title{Mitgliedsantrag}
@@ -55,7 +51,9 @@
 \end{tabular}
 \end{center}
 
-% angepasster Header... \maketitle ist Mist auf a5paper
+\vfill
+
+% angepasster Titel... \maketitle ist Mist auf a5paper
 \begin{center}
   \Large \titlefont \makeatletter \@title \makeatother
 \end{center}
@@ -63,15 +61,17 @@
 \emph{Mitgliedsanträge können auch formlos per E-Mail oder Fax gestellt werden,
 unter Angabe der hier aufgeführten Daten.}
 
+% Persönliche Daten
 \section*{Persönliche Daten}
 \begin{description}
-  \item[(Real-)Name:] \hrulefill% \signskip
+  \item[Bürgerlicher Name:] \hrulefill% \signskip
   \item[E-Mail-Adresse:] \hrulefill \signskip
 \end{description}
 \hinweis{Alle Änderungen dieser Daten müssen dem Vorstand gemeldet werden. Falls
 der Vorstand dich in wich\-ti\-gen Fällen nicht erreichen kann, hat dies unter
 Umständen deinen Aus\-schluss als Mitglied zur Folge.}
 
+% Mitgliedsbeitrag
 \section*{Mitgliedsbeitrag}
 \begin{description}
   \item[\Square] Ich möchte den vollen Beitrag von \textbf{20€ pro Monat} zahlen.
@@ -86,6 +86,8 @@ Umständen deinen Aus\-schluss als Mitglied zur Folge.}
     \Square~Befreiung \hfill
     \Square~Ermäßigung auf: \hrulefill~€\hfill\phantom{a}
 \end{description}
+
+\vfill
 
 Datum, Unterschrift: \hrulefill\signskip
 

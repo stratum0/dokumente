@@ -25,24 +25,43 @@
 \title{Mitgliedsantrag}
 
 \begin{document}
-\begin{tabular}{@{}c@{\phantom{m}}l}
-  \multirow{4}{*}{
-    \includegraphics[height=44pt]{stratum0-logo.eps}
-  } &
-  Vorstand des Stratum~0~e.\,V. \\
-  & Hamburger Straße 273a \\
-  & 38112 Braunschweig \\
-  & vorstand@stratum0.org
+
+% Header mit Logo und Anschrift
+\newsavebox{\headerboxaddress}
+\sbox{\headerboxaddress}{
+  \parbox{.4\textwidth}{
+    \small
+    Vorstand des Stratum~0~e.\,V. \\
+    Hamburger Straße 273a \\
+    38112 Braunschweig \\
+    vorstand@stratum0.org \\
+    Fax: (0531) 287 69 246
+  }
+}
+\newsavebox{\headerboxlogo}
+\sbox{\headerboxlogo}{
+  \parbox{.4\textwidth}{
+    \hfill % damit rechtsbündig klappt
+    \includegraphics[height=52pt]{stratum0-logo.eps}
+  }
+}
+\begin{center}
+\begin{tabular}{@{}p{0.4\textwidth}@{\phantom{m}}p{0.4\textwidth}}
+  \multicolumn{1}{r}{
+    \usebox{\headerboxlogo}
+  }
+  &
+  \usebox{\headerboxaddress}
 \end{tabular}
+\end{center}
 
 % angepasster Header... \maketitle ist Mist auf a5paper
 \begin{center}
   \Large \titlefont \makeatletter \@title \makeatother
 \end{center}
 
-\emph{Mitgliedsanträge können auch formlos per E-Mail an
-\emph{vorstand@stratum0.org} gestellt werden, unter Angabe der hier
-aufgeführten Daten.}
+\emph{Mitgliedsanträge können auch formlos per E-Mail oder Fax gestellt werden,
+unter Angabe der hier aufgeführten Daten.}
 
 \section*{Persönliche Daten}
 \begin{description}

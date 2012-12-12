@@ -40,24 +40,34 @@
 \makeatother
 
 %% votes
+%% Parameters: text, pros, contras, abstentions
 \newcommand{\vote}[4]{%
   \marginpar{\footnotesize #1:\\#2~pro, #3~con, #4~neutral}%
 }
 %% consensus without explicit vote
+%% Parameters: text
 \newcommand{\consensus}[1]{%
   \marginpar{\footnotesize #1}%
 }
 %% no vote at all, disagreement
+%% Parameters: text
 \newcommand{\novote}{%
   \marginpar{\footnotesize Kein Beschluss}%
 }
 %% postponed agenda items
+%% Parameters: text
 \newcommand{\postponed}{%
   \marginpar{\footnotesize Beschluss vertagt}%
 }
 %% withdrawn agenda items
+%% Parameters: text
 \newcommand{\withdrawn}{%
   \marginpar{\footnotesize TOP zurückgezogen}%
+}
+%% elected persons
+%% Parameters: appointment, name, votes, max. possible votes
+\newcommand{\elected}[4]{%
+  \marginpar{\footnotesize #1: #2 (#3/#4)}
 }
 
 \RequirePackage{fancyhdr}

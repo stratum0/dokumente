@@ -3,14 +3,16 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 
 \ProvidesPackage{stratum0doc}
+\RequirePackage{tocloft}
 
 %% Package options
 \makeatletter
   \DeclareOption{transcript}{%
-    \def\@sndsectionmark{TOP}%
-    \setcounter{section}{-1}% start with TOP 0 for more geekness
+    \def\@sndsectionmark{TOP\ }%
   }
-  \DeclareOption{legal}{\def\@sndsectionmark{§}}
+  \DeclareOption{legal}{
+    \def\@sndsectionmark{§\ }
+  }
   \ExecuteOptions{transcript}
   \ProcessOptions\relax
 \makeatother
@@ -33,8 +35,14 @@
 \makeatletter
 \renewcommand{\labelenumi}{(\arabic{enumi})}
 \renewcommand{\labelitemi}{--}
-\renewcommand{\thesection}{%
-  \@sndsectionmark\ \@arabic\c@section
+
+% set table of contents number field to max width of section numbers
+\settowidth{\cftsecnumwidth}{\@sndsectionmark 10 }
+\settowidth{\cftsubsecnumwidth}{\@sndsectionmark 1.10 }
+
+\let\theoldsection\thesection
+\renewcommand*{\thesection}{%
+  \@sndsectionmark\theoldsection
 }
 \setcounter{section}{-1} % Hacker fangen ab 0 an zu zählen.
 \makeatother

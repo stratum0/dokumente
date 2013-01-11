@@ -47,10 +47,18 @@
 \setcounter{section}{-1} % Hacker fangen ab 0 an zu zählen.
 \makeatother
 
+% paragraph skips and indents
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0em}
+
+% enlarge page margin, for following \vote etc. commands
+\addtolength{\textwidth}{-14pt}
+\addtolength{\marginparwidth}{13pt}
+
 %% votes
 %% Parameters: text, pros, contras, abstentions
 \newcommand{\vote}[4]{%
-  \marginpar{\footnotesize #1:\\#2~pro, #3~con, #4~neutral}%
+  \marginpar{\footnotesize #1:\\#2~pro, #3~contra, #4~neutral}%
 }
 %% consensus without explicit vote
 %% Parameters: text

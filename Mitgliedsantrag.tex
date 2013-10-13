@@ -1,5 +1,5 @@
 \documentclass[a5paper,10pt,headings=small]{scrartcl}
-\usepackage[portrait,top=1.5cm,left=2cm,bottom=1.5cm,right=2cm]{geometry}
+\usepackage[portrait,top=1.5cm,left=1.5cm,bottom=1.5cm,right=1.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp} % für €
@@ -51,9 +51,8 @@
 \end{tabular}
 \end{center}
 
-\vfill
-
 % angepasster Titel... \maketitle ist Mist auf a5paper
+\vfill
 \begin{center}
   \Large \titlefont \makeatletter \@title \makeatother
 \end{center}
@@ -62,34 +61,37 @@
 unter Angabe der hier aufgeführten Daten.}
 
 % Persönliche Daten
-\section*{Persönliche Daten}
-\begin{description}
-  \item[Bürgerlicher Name:] \hrulefill% \signskip
-  \item[E-Mail-Adresse:] \hrulefill \signskip
-\end{description}
+\vfill
+\minisec{Persönliche Daten}
+Bürgerlicher Name: \hrulefill \signskip \\
+E-Mail-Adresse: \hrulefill \signskip \\
+
 \hinweis{Alle Änderungen dieser Daten müssen dem Vorstand gemeldet werden. Falls
 der Vorstand dich in wich\-ti\-gen Fällen nicht erreichen kann, hat dies unter
 Umständen deinen Aus\-schluss als Mitglied zur Folge.}
 
 % Mitgliedsbeitrag
-\section*{Mitgliedsbeitrag}
+\vfill
+\minisec{Mitgliedsbeitrag}
 \begin{description}
   \item[\Square] Ich möchte den vollen Beitrag von \textbf{20€ pro Monat} zahlen.
-  \item[\Square] Ich gehe zur Schule, studiere, empfange Sozialgeld oder ALG~II
-    einschließ\-lich Leistungen nach §~22 ohne Zuschläge oder nach §~24 SGB~II,
-    oder beziehe Ausbildungsförderung nach dem BAföG und möchte den ermäßigten
-    Beitrag von \textbf{12€ pro Monat} zahlen. Ein entsprechender Nachweis muss
-    dem Vorstand auf Verlangen zugänglich gemacht werden.
-  \item[\Square] Ich kann aus finanziellen Gründen den regulären Beitrag nicht
-    aufbringen und beantrage nach §3~Abs.~3 der Beitragsordnung eine Ermäßigung
-    des Betrags. Dieser Antrag gilt für ein Jahr und kann erneuert werden. \\
+  \item[\Square] Ich möchte den ermäßigten Beitrag von \textbf{12€ pro Monat}
+    nach §0,~Abs.~2 der Beitragsordnung zahlen. (Ein entsprechender Nachweis
+    muss dem Vorstand auf Verlangen zugänglich gemacht werden.)
+  \item[\Square] Ich beantrage aus finanziellen Gründen nach §3,~Abs.~3 der
+    Beitragsordnung eine individuelle Ermäßigung oder Befreiung. Diese gilt für
+    ein Jahr und kann auf Antrag erneuert werden. \\
     \Square~Befreiung \hfill
     \Square~Ermäßigung auf: \hrulefill~€\hfill\phantom{a}
 \end{description}
 
-\vfill
-
 Datum, Unterschrift: \hrulefill\signskip
+
+% Gesetzlicher Vertreter
+\vfill
+\minisec{Nur bei Minderjährigen: Gesetzlicher Vertreter}
+Name: \hrulefill\signskip \\
+Datum, Unterschrift: \hrulefill\signskip \\
 
 \hinweis{Sobald der Vorstand über deinen Antrag entschieden hat, bekommst du per
 E-Mail Nachricht über deine Aufnahme und erhältst weitere Informationen.}

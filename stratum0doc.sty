@@ -59,33 +59,36 @@
 %% votes
 %% Parameters: text, pros, contras, abstentions
 \newcommand{\vote}[4]{%
-  \marginpar{\footnotesize #1:\\#2~pro, #3~contra, #4~neutral}%
+  \marginpar{\footnotesize \textbf{Abstimmung:} #1:\\#2~pro, #3~contra, #4~neutral}%
 }
 %% consensus without explicit vote
 %% Parameters: text
 \newcommand{\consensus}[1]{%
-  \marginpar{\footnotesize #1}%
+  \marginpar{\footnotesize \textbf{Konsens:} #1}%
 }
 %% no vote at all, disagreement
 %% Parameters: text
 \newcommand{\novote}{%
-  \marginpar{\footnotesize Kein Beschluss}%
+  \marginpar{\footnotesize \textbf{Kein Beschluss}}%
 }
 %% postponed agenda items
 %% Parameters: text
 \newcommand{\postponed}{%
-  \marginpar{\footnotesize vertagt}%
+  \marginpar{\footnotesize \textbf{vertagt}}%
 }
 %% withdrawn agenda items
 %% Parameters: text
 \newcommand{\withdrawn}{%
-  \marginpar{\footnotesize TOP zurückgezogen}%
+  \marginpar{\footnotesize \textbf{TOP zurückgezogen}}%
 }
 %% elected persons
 %% Parameters: appointment, name, votes, max. possible votes
 \newcommand{\elected}[4]{%
-  \marginpar{\footnotesize #1: #2 (#3/#4)}
+  \marginpar{\footnotesize \textbf{#1: #2 (#3/#4)}}
 }
+%% questions and answers
+\newcommand{\question}[1]{\textbf{Frage:} #1 \\}
+\newcommand{\answer}[1]{\textbf{Antwort:} #1}
 
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}

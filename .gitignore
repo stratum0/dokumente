@@ -6,3 +6,5 @@
 *.orig
 *.rej
 *.out
+*.fdb_latexmk
+*.ps

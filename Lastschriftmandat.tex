@@ -6,6 +6,7 @@
 \usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{wasysym} % für \Square
 
 \pagestyle{empty}
 \setlength{\parindent}{0cm}
@@ -20,11 +21,12 @@
 \begin{document}
 
 % angepasster Titel... \maketitle ist Mist auf a5paper
-\vfill
 \begin{center}
   {\Large \titlefont \makeatletter \@title \makeatother} \\
   für SEPA-Basis-Lastschriftverfahren
 \end{center}
+
+\vspace{-1\baselineskip}
 
 %\vfill
 \minisec{Zahlungsempfänger}
@@ -58,14 +60,17 @@ Dieses SEPA-Lastschriftmandat bezieht sich auf das folgende Mitglied und
 erlischt spätestens mit dessen Austritt: \\
 \field{}
 
-\vfill
+%\vfill
 \minisec{Zahlungspflichtige Entität (Kontoinhaber)}
+Zahlungsweise: \Square~monatlich \hfill\Square~vierteljährlich \hfill
+  \Square~halbjährlich \hfill \Square~jährlich
 Name, Anschrift: \smallfield{} \\
 \field{} \\
 Kreditinstitut: \field{} \\
 IBAN: \field{} \\
 BIC: \field{} \\
 
+\vfill
 Ich ermächtigte den Stratum~0~e.~V. wiederkehrende Zahlungen von meinem Konto
 mittels SEPA-Basislastschrift einzuziehen. Zugleich weise ich mein
 Kreditinstitut an, die vom Stratum~0~e.~V. auf mein Konto gezogenen

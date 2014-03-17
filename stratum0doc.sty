@@ -90,6 +90,32 @@
 \newcommand{\question}[1]{\textbf{Frage:} #1 \\}
 \newcommand{\answer}[1]{\textbf{Antwort:} #1}
 
+% inclusion of single PDF pages
+% usage: \includepdfpage{pdf file}{page number}
+% set length \includepdfpagewidth to control width of pages
+\newlength{\includepdfpagewidth}
+\setlength{\includepdfpagewidth}{0.75\textwidth}
+\newcommand{\includepdfpage}[2]{%
+  \begin{center}
+    \fbox{
+      \includegraphics[%
+        width=\includepdfpagewidth,%
+        page=#2,%
+        bb=29pt 28pt 764pt 591pt,%
+        clip=true%
+        ]{#1}%
+    }%
+  \end{center}%
+}
+% notes for included pdf pages. uses \includepdfpagewidth.
+\newcommand{\pdfpagenote}[1]{%
+  \begin{center}
+    \begin{minipage}{\includepdfpagewidth}
+      \vspace{-.5\baselineskip}
+      \footnotesize{#1}
+    \end{minipage}
+  \end{center}%
+}
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 
@@ -100,5 +126,8 @@
   \let\mydate\@date%
   \myfancysetup{\mytitle}{\mydate}%
 }
+
+
+
 \makeatother
 % vim: set tw=80 et sw=2 ts=2:

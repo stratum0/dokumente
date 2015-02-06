@@ -4,6 +4,9 @@
 
 \ProvidesPackage{stratum0doc}
 \RequirePackage{tocloft}
+\RequirePackage{enumitem}
+\RequirePackage[margin=2cm,outer=3.1cm]{geometry}
+\RequirePackage[compact]{titlesec}
 
 %% Package options
 \makeatletter
@@ -31,6 +34,10 @@
   }
 }
 
+%% default monospace font
+\RequirePackage[defaultmono,scale=0.8]{droidmono}
+\urlstyle{tt}
+
 %% list bullets, section prefix
 \makeatletter
 \renewcommand{\labelenumi}{(\arabic{enumi})}
@@ -47,10 +54,20 @@
 \setcounter{section}{-1} % Hacker fangen ab 0 an zu zählen.
 \makeatother
 
-% paragraph skips and indents
-\setlength{\parskip}{0.5em}
+% optimize vertical spacing
+\setlist{nosep}
+\titlespacing{\section}{0pt}{12pt}{0pt}
+\titlespacing{\subsection}{0pt}{0.3em}{*0}
+\titlespacing{\subsubsection}{0pt}{0.3em}{*0}
+\setlength{\parskip}{0.5em plus 0.1em minus 0.3em}
 \setlength{\parindent}{0em}
 \setlength{\cftbeforesecskip}{0.3\baselineskip}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{12pt}
+\setlength{\topskip}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+\setlength{\footskip}{32pt}
 
 % enlarge page margin, for following \vote etc. commands
 \addtolength{\textwidth}{-14pt}

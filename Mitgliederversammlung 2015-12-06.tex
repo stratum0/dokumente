@@ -1,0 +1,899 @@
+% vim:tw=80 ts=2 et sw=2 indentexpr= :
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{libertine} % kann man notfalls auch ignorieren, wenns nicht da ist
+\usepackage{textcomp} % notfalls für €
+\usepackage{hyperref}
+\usepackage{stratum0doc}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx}
+
+\title{6.~Mitgliederversammlung des Stratum~0~e.~V.}
+\date{6. Dezember 2015}
+
+\begin{document}
+\maketitle
+%{\footnotesize\tableofcontents}
+
+\hyphenation{Mit-glie-der-ver-samm-lung}
+
+%%%%%%%%%%%
+%% TOP 0 %%
+%%%%%%%%%%%
+\section{Organisatorischer Overhead}
+\begin{description}
+  \item[Zeit:] Sonntag, 6. Dezember 2015, 14:00
+  \item[Ort:] Stratum 0 e.~V., Hamburger Straße 273a, Braunschweig
+  \item[Anwesend:] 24 stimmberechtigte von 70 Mitgliedern (34\,\%), die Versammlung
+    ist somit beschlussfähig.
+  \item[Wahl des Protokollanten:] rohieb, ohne Gegenstimmen.
+  \item[Wahl des Versammlungsleiters:] larsan, ohne Gegenstimmen.
+	\item[Wahl der Wahlleitung:] Kah, ohne Gegenstimmen.
+  \item[Veranstaltung eröffnet] durch den Versammlungsleiter um 14:27
+  \item[Tagesordnung:] ohne Gegenstimmen angenommen
+\end{description}
+
+
+%%%%%%%%%%%
+%% TOP 1 %%
+%%%%%%%%%%%
+\section{Jahresbericht und Entlastung des Vorstands}
+
+\subsection{Finanzbericht}
+chrissi\textasciicircum{} fasst die finanzielle Lage für das letzte Jahr
+zusammen.  Der vollständige Finanzbericht kann im Wiki eingesehen
+werden.\footnote{siehe
+\url{https://stratum0.org/wiki/Datei:Finanzbericht_2015.pdf}}
+Die Zahlen beziehen sich auf den Zeitraum von 1. Dezember 2014 bis 30. November
+2015.
+
+\paragraph{Überblick über die Finanzen im Jahr 2015:}
+\begin{longtable}{|l|r|r|}
+  \hline
+  \textbf{Bereich} & \textbf{Einnahmen [€]} & \textbf{Ausgaben [€]} \\
+  \hline
+  \endfirsthead
+  \multicolumn{3}{l}{\emph{(Fortsetzung von vorheriger Seite)}} \\
+  \hline
+  \textbf{Bereich} & \textbf{Einnahmen [€]} & \textbf{Ausgaben [€]} \\
+  \hline
+  \endhead
+  \multicolumn{3}{l}{\emph{(Fortsetzung auf nächster Seite)}} \\
+  \endfoot
+  \endlastfoot
+  Ideeller Bereich: Allgemein       & 27{.}242{,}50 & -12{.}130{,}44 \\
+  \quad davon Mitgliedsbeiträge     & 12{.}990{,}00 &                \\
+  \quad davon Spenden               &  4{.}951{,}66 &                \\
+  \quad davon Veranstaltungsförderung &             &  -2{.}600{,}00 \\
+  \quad davon Vereinsserver         &               &      -400{,}19 \\
+  \hline
+  Ideeller Bereich: Projekte        &  2{.}197{,}27 &  -1{.}284{,}19 \\
+  \quad davon Bastelmaterial        &               &      -214{,}21 \\
+  \quad davon Stickmaschine         &      156{,}12 &       -35{,}30 \\
+  \quad davon Schneidplotter        &       87{,}90 &      -118{,}20 \\
+  \quad davon 3D-Drucker            &       99{,}92 &       -40{,}90 \\
+  \quad davon Freifunk              &  1{.}603{,}33 &      -875{,}58 \\
+  \quad davon CoderDojo             &      250{,}00 &                \\
+  \hline
+  Ideeller Bereich: Space           &      286{,}15 & -15{.}914{,}46 \\
+  \quad davon Miete und Nebenkosten &      146{,}15 & -13{.}368{,}27 \\
+  \quad davon Einrichtung           &      140{,}00 &  -1{.}274{,}03 \\
+  \quad davon Renovierung Space 2.0 &               &      -919{.}28 \\
+  \hline
+  Zweckbetriebe                     &        0{,}00 &         0{,}00 \\
+  \hline
+  Vermögensverwaltung               &        0{,}00 &         0{,}00 \\
+  \hline
+  Wirtschaftlicher Geschäftsbetrieb &  5{.}422{,}16 &  -5{.}027{,}94 \\
+  \quad (Matekasse) && \\
+  \hline
+  Mankobuchungen                    &       39{,}66 &       -56{,}49 \\
+  \hline
+  Gesamt:                           & 35{.}187{,}74 & -34{.}413{,}52 \\
+  \hline\hline
+  \textbf{Gewinn/Verlust Gesamt:}   &      774{,}22 &                \\
+  \hline
+\end{longtable}
+
+Größere Kostenpunkte dieses Jahr waren (neben laufenden Kosten) die anhaltende
+Renovierung (Holodeck), der Zuschuss zum EasterHegg 2015, sowie als
+durchlaufender Posten das Sponsoring der Volkswagen AG für unser CTF-Team zur
+DEFCON 2014.  Die Mankobuchungen wurden zum Großteil durch die frei zugängliche
+Verbrauchsmaterialkasse verursacht, hierfür soll in Zukunft ein Kassenbuch
+angelegt werden. Die Einnahmen und Ausgaben im wirtschaftlichen Geschäftsbetrieb
+(Getränkeverkauf) halten sich die Waage.
+
+Die Gegenüberstellung der durchschnittlichen Einnahmen und laufenden
+Verpflichtungen pro Monat\footnote{siehe auch
+\url{https://stratum0.org/wiki/Verträge}} zeigt auch dieses Jahr noch ein
+positives Bild:
+
+\begin{longtable}{|lr|lr|} % tabular kann keine \footnotes
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Einnahmen}} &
+  \multicolumn{2}{|c|}{\textbf{Verpflichtungen}} \\
+  \hline
+  Mitgliedsbeiträge: & 1{.}002\,€ & Miete, Nebenkosten:      & 630\,€ \\
+  Spenden:           &     380\,€ & Strom:                   & 240\,€ \\
+                     &            & Internet:                &  42\,€ \\
+                     &            & Server, Domain:          &  51\,€ \\
+                     &            & Haftpflichtversicherung: &  12\,€ \\
+  \hline\hline
+  \textbf{Gesamt:} & \textbf{1{.}382\,€} & \textbf{Gesamt:} & \textbf{975\,€} \\
+  \hline
+\end{longtable}
+
+Zu erwähnen ist allerdings, dass LINET sein regelmäßiges Sponsoring Mitte des
+Jahres eingestellt hat und somit keine Firmensponsoren mehr existieren. Die
+Mitgliederzahl wächst nicht mehr groß, in Summe handelt es sich um etwa 2 neue
+Mitglieder. Die Mitgliederzahl sollte im Auge behalten werden, damit die
+laufenden Kosten noch gedeckt werden können. Die Zahlung der Mitgliedsbeiträge
+hat sich allerdings im Vergleich zum letzten Jahr stabilisiert. Die
+Abschlagszahlung für Strom wurde von naturstrom um 20€ nach oben korrigiert, was
+den steigenden Verbrauch im letzten Jahr widerspiegelt.
+
+Insgesamt verfügt der Verein durchschnittlich über Mittel von etwa 6{.}900€, es
+bestehen allerdings davon folgende Rücklagen:
+
+\begin{center}
+\begin{tabular}{|l|r|}
+  \hline
+  \textbf{Zweck der Rücklage} & \textbf{Betrag} \\
+  \hline
+  Erhöhung Mietsicherheit Space 2.0 &     160{,}00\,€ \\
+  \qquad (wurde bisher von der Vermieterin nicht eingefordert) & \\
+  Puffer Einnahmeausfälle           & 3{.}000{,}00\,€ \\
+  \hline
+\end{tabular}
+\end{center}
+
+Die Rückstellung für die Nachzahlung an naturstrom wurde aufgelöst, nachdem die
+ausstehenden Forderungen geltend gemacht wurden. Als frei verfügbare Mittel
+bleiben damit etwa 3{.}700€.
+
+\paragraph{Ausblick 2016:} Es wird nach dem vollzogenen Umzug und Ausbau mit
+einer Stabilisierung der Nebenkosten gerechnet.  Die  Nebenkostenabrechnungen
+für 2012 und 2013 stehen seitens der Hausverwaltung weiterhin aus, der Vorstand
+rechnet diesbezüglich aber nicht mit Nachzahlungen oder Gutschriften. Außerdem
+dürfen wir weiterhin Zuwendungsbescheinigungen ausstellen.
+
+Fragen aus der Runde:
+
+\question{Inwiefern taucht das EasterHegg 2015 in der Buchhaltung auf?}
+\answer{Bis auf den Punkt Veranstaltungsförderung (Saalmiete für
+  CVJM-Hotel) gar nicht, wurde durch die ausgegliederte SMFW UG
+  (haftungsbeschränkt) mit reneger als Geschäftsführer abgewickelt.}
+
+\question{Besteht ein Plan, sich an der UG finanziell zu beteiligen?}
+\answer{Der Plan besteht auf lange Sicht.}
+
+\question{Gibt es einen Haushaltsplan für nächstes Jahr?}
+\answer{Besteht nicht, außer dass Mitgliederzahlen bitte wieder
+  steigen sollen. Ausgaben werden wie bisher erwartet.\footnote{unabhängig
+  davon besteht eine Auflistung der laufenden Verpflichtungen, siehe oben.}}
+
+\subsection{Rechenschaftsbericht}
+Kasalehlia fasst für den gesamten Vorstand dessen Tätigkeiten im letzten Jahr
+zusammen. Seine Präsentation kann im Wiki heruntergeladen
+werden.\footnote{siehe
+\url{https://stratum0.org/wiki/Datei:Rechenschaftsbericht_2015.pdf}}
+
+\subsection{Bericht der Kassenprüfer}
+Eine der Kassenprüfer hat den Verein inzwischen verlassen, da in der
+Zwischenzeit keine andere Person beauftragt wurde, hat shoragan die Kasse
+alleine geprüft. Hier stellt sich die Frage, ob man sicherheitshalber mehr als
+zwei Kassenprüfer wählen sollte. Satzung, §8 Abs.~4 spricht von "`zwei
+Rechnungsprüfern"', dies ist wohl als "`genau zwei"' zu interpretieren.
+
+Die Kassenprüfung hat festgestellt, dass für eine Rechnung zu viel überwiesen
+wurde, dies befindet sich jedoch schon im Prozess der Reperatur. Durch die
+vielen Mankobuchungen in der Verbrauchsmaterialkasse spricht sich auch shoragan
+dringend für die Einführung eines Kassenbuchs aus. Außerdem bittet er, darauf zu
+achten, dass bei Einzahlung in die Matekasse (Backbone) möglichst nicht viele, kleine
+Buchungen erstellt werden, sondern lieber mehr Geld am Stück eingezahlt wird, um
+die Fehlerquote und auch die Arbeit zur Digitialisierung gering zu halten.
+Außerdem hebt er hervor, dass auf Kassenzetteln in der Verbrauchsmaterialkasse
+immer ersichtlich sein muss,
+welche Dinge für den Verein bezahlt wurde und welche privat. Notfalls sollte man
+sich beim Einkauf eine Zwischensumme auf dem Kassenzettel erstellen lassen.
+
+Da die Mankobuchungen angesichts der Umsatzmenge keine gravierenden Fehler
+darstellen, empfiehlt shoragan die Entlastung des Schatzmeisters.
+
+\subsection{Entlastung des Vorstands}
+\consensus{Vorstand entlastet}
+larsan beantragt, den Vorstand in seiner Gesamtheit zu entlasten. Eine
+Einzelentlastung wird nicht gewünscht. Der Vorstand enthält sich bei der
+Abstimmung. Die Handabstimmung ergibt ohne Gegenstimmen, dass der Vorstand
+entlastet werden soll.
+
+\emph{[ 15:35--15:47: kurze Pause. ]}
+
+\subsection{Jahresbericht}
+Nach der Pause gibt larsan einen Überblick, was generell so im letzten Jahr aus
+Sicht des Vereins passiert ist. Seine Präsentation kann im Wiki heruntergeladen
+werden.\footnote{siehe
+\url{https://stratum0.org/wiki/Datei:Jahresbericht2015.pdf}}
+
+\emph{[ 16:15: ein Mitglied verlässt die Versammlung, dessen unausgefüllter
+Wahlzettel wird vom Schatzmeister ungültig gemacht. ]}
+
+
+
+%%%%%%%%%%%
+%% TOP 2 %%
+%%%%%%%%%%%
+\section{Wahlen}
+\emph{[ 16:39: ein stimmberechtigtes Mitglied wird nachträglich akkreditiert ]}
+
+Als Wahlmodus wird wie bisher vorgeschlagen:
+\begin{itemize}
+  \item alle Ämter werden gleichzeitig auf einem Zettel gewählt (wenig Papier).
+  Da die Kandidaten vorher noch nicht feststanden, wurden Stimmzettel mit
+  Symbolen vorgedruckt und es wird jedem Kandidat ein Symbol zugewiesen.
+  \item Zustimmungswahl (alles ankreuzen, was gewählt werden soll)
+  \item Nur Kandidaten mit mindestens 50\% der Stimmen sind gewählt
+  \item Besetzung der Ämter in der Reihenfolge Vorstandsvorsitzender, stellv.
+    Vorsitzender, Schatzmeister, Beisitzer (nach Stimmenanzahl absteigend),
+    Rechnungsprüfer.
+\end{itemize}
+
+Die Mehrheit der Versammlung stimmt per Handzeichen für diesen Wahlmodus. Als
+Wahlhelfer stellen sich mjh, Emantor zur Verfügung, dagegen gibt es keine
+Einwände.
+
+Die Kandidaten stellen sich jeweils kurz vor. Die Wahlurne wird ordnungsgemäß
+ausgekippt und mit Klebeband versiegelt.
+
+Der Wahlgang wird eröffnet um 16:56, die Wahlabgabe wird um 16:58 geschlossen.
+Die Wahlleitung zieht sich mit den Wahlhelfern zur Auszählung zurück und es gibt
+eine kurze Pause.
+
+\emph{[ 2 Mitglieder verlassen in der Pause die Versammlung ]}
+
+Das Wahlergebnis wird um 17:22 verkündet. Leider wurde die Anzahl der
+abgegebenen Stimmen nicht bekanntgeben. Da jedoch 25 Stimmzettel bei der
+Akkreditierung ausgegeben wurden, von denen einer ungülgtig gemacht wurde, und
+da bei der Wahl mehrmals 24 Stimmen auf einen Kandidaten entfielen, ist sehr
+wahrscheinlich, dass 24 gültige Stimmzettel abgegeben worden sind.
+
+Wahlergebnis:
+
+\subsection*{Vorstandsvorsitzender}
+\begin{tabular}{|c|l|l|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Kandidat} & \textbf{Stimmen} & \textbf{Prozent} \\
+  \hline
+  \includegraphics[height=20pt]{images/mv20151206-wahl-1v-1.pdf} &
+  rohieb (Roland Hieber) & 13 & 51{,}4\% \\
+  \includegraphics[height=20pt]{images/mv20151206-wahl-1v-2.pdf} &
+  larsan (Lars Andresen) & 23 & 95{,}8\% \\
+  \hline
+\end{tabular}
+
+\elected{Vorstands\-vorsitzender}{larsan}{23}{24}
+larsan nimmt die Wahl zum Vorstandsvorsitzenden an.
+
+\subsection*{Stellv. Vorsitzender}
+\begin{tabular}{|c|l|l|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Kandidat} & \textbf{Stimmen} & \textbf{Prozent} \\
+  \hline
+  \includegraphics[height=12pt]{images/mv20151206-wahl-2v-1.pdf} &
+  Kasalehlia (Hilko Boekhoff)  & 23 & 95{,}8\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-2v-2.pdf} &
+  larsan (Lars Andresen)       & 21 & 87{,}5\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-2v-3.pdf} &
+  rohieb (Roland Hieber)       & 20 & 83{,}3\% \\
+  \hline
+\end{tabular}
+
+\elected{stellv. Vorsitzender}{rohieb}{20}{24}
+Kasalehlia nimmt die Wahl zum stellv. Vorsitzenden nicht an. larsan ist schon
+als Vorstandsvorsitzender gewählt und scheidet damit aus. rohieb nimmt die Wahl
+an.
+
+\subsection*{Schatzmeister}
+\begin{tabular}{|c|l|l|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Kandidat} & \textbf{Stimmen} & \textbf{Prozent} \\
+  \hline
+  \includegraphics[height=12pt]{images/mv20151206-wahl-schatzmeister-1.pdf} &
+  chrissi\textasciicircum{} (Chris Fiege) & 24 & 100\% \\
+  \hline
+\end{tabular}
+
+\elected{Schatzmeister}{chrissi\textasciicircum}{24}{24}
+chrissi\textasciicircum{} nimmt die Wahl zum Schatzmeister an.
+
+\subsection*{Beisitzer}
+\begin{tabular}{|c|l|l|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Kandidat} & \textbf{Stimmen} & \textbf{Prozent} \\
+  \hline
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-1.pdf} &
+  Kasalehlia (Hilko Boekhoff)      & 24 & 100\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-2.pdf} &
+  larsan (Lars Andresen)           & 22 & 91{,}6\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-3.pdf} &
+  rohieb (Roland Hieber)           & 19 & 79{,}1\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-4.pdf} &
+  hanhaiwen (Helga Hansen)         & 21 & 87{,}5\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-5.pdf} &
+  DooMMasteR (Steffen Arntz)       & 16 & 66{,}6\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-6.pdf} &
+  tnias                            & 13 & 54{,}1\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-beisitzer-7.pdf} &
+  lichtfeind                       & 11 & 45{,}8\% \\
+  \hline
+\end{tabular}
+
+\elected{Beisitzer}{Kasa\-lehlia}{24}{24}
+\elected{Beisitzerin}{hanhaiwen}{21}{24}
+\elected{Beisitzer}{DooMMasteR}{16}{24}
+Kasalehlia nimmt die Wahl zum Beisitzer an. larsan und rohieb sind schon
+gewählt und scheiden somit aus. hanhaiwen und DooMMasteR nehmen beide die Wahl
+zur Beisitzerin bzw. zum Beisitzer an.
+
+\subsection*{Rechnungsprüfer}
+\begin{tabular}{|c|l|l|l|}
+  \hline
+  \textbf{Symbol} & \textbf{Kandidat} & \textbf{Stimmen} & \textbf{Prozent} \\
+  \hline
+  \includegraphics[height=12pt]{images/mv20151206-wahl-rechnungspruefer-1.pdf} &
+  rohieb   & 13 & 54.1\% \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-rechnungspruefer-2.pdf} &
+  shoragan & 24 & 100\%  \\
+  \includegraphics[height=12pt]{images/mv20151206-wahl-rechnungspruefer-3.pdf} &
+  Angela   & 23 & 95.8\% \\
+  \hline
+\end{tabular}
+
+\elected{Rechnungsprüfer}{shoragan}{24}{24}
+\elected{Rechnungsprüfer}{Angela}{23}{24}
+rohieb ist schon als stellv. Vorsitzender gewählt. shoragan und Angela nehmen
+die Wahl zu Rechnungsprüfern an.
+
+
+%%%%%%%%%%%
+%% TOP 3 %%
+%%%%%%%%%%%
+\section{Satzungsänderungen}
+\emph{[ 17:29: Durchzählen zur Kontrolle: 22 stimmberechtigte Mitglieder
+anwesend. ]}
+
+Satzungsänderungsanträge müssen laut Satzung §9 mindestens drei Viertel der
+Stimmen erhalten, dies entspricht bei 22 anwesenden, stimmberechtigten
+Mitgliedern mindestens 17 Stimmen.
+
+Die folgenden Änderungsanträge zur Satzung wurden gestellt und sind hier
+mit altem und neuem Wortlaut wiedergegeben (Unterschiede jeweils
+kursiv):
+
+\subsection{Änderungsantrag 1: Quoren für Fördermitglieder einschränken}
+Die Fördermitgliedschaft war von Anfang an für Mitglieder gedacht, die den
+Verein vorrangig finanziell unterstützen wollen und an Abstimmungen auf
+Mitgliederversammlungen kein Interesse haben (s. Satzung, §4 (Mitgliedschaft),
+Abs. 2). Leider wurde bei der entsprechenden Satzungsänderung auf der
+Mitgliederversammlung 2013-12-07, die die Fördermitgliedschaft
+einführte,\footnote{siehe \url{
+https://stratum0.org/wiki/Datei:Mitgliederversammlung_2013-12-07.pdf?page=5}}
+einige Formulierungen nicht angepasst. So zählen Fördermitglieder bisher noch
+zum Quorum der Beschlussfähigkeit bei Mitgliederversammlungen, und in andere
+Quoren, bei denen sie schon jetzt gar kein Stimmrecht haben.
+
+Da nur stimmberechtigte Mitglieder abstimmen können, sollen die Quoren für
+Beschlussfassung entsprechend anhand der anwesenden stimmberechtigten Mitglieder
+berechnet werden:
+
+\subsubsection*{§7 (Mitgliederversammlung), Abs. 2}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Eine Mitgliederversammlung ist außerdem einzuberufen, wenn es das
+Vereinsinteresse erfordert, oder wenn die Einberufung von mindestens
+23\% der Vereinsmitglieder in Textform und unter Angabe des Zweckes und
+der Gründe verlangt wird.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Eine Mitgliederversammlung ist außerdem einzuberufen, wenn es das
+Vereinsinteresse erfordert, oder wenn die Einberufung von mindestens
+23\% der \emph{ordentlichen} Vereinsmitglieder in Textform und unter Angabe des
+Zweckes und der Gründe verlangt wird.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsubsection*{§7 (Mitgliederversammlung), Abs. 6}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Jede satzungsmäßig einberufene Mitgliederversammlung wird als
+beschlussfähig anerkannt, sofern mindestens 23\% der Mitglieder anwesend
+sind. Falls dieser geforderte Anteil nicht erreicht wird, ist die darauf
+folgende Mitgliederversammlung unabhängig von der Anzahl der erschienen
+Mitglieder beschlussfähig. Auf diesen Umstand muss in der Einladung zur
+Mitgliederversammlung besonders hingewiesen werden. Jedes ordentliche
+Mitglied hat eine Stimme. Fördermitglieder sind berechtigt, an den
+Versammlungen ohne Stimmrecht teilzunehmen.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Jede satzungsmäßig einberufene Mitgliederversammlung wird als
+beschlussfähig anerkannt, sofern mindestens 23\% der \emph{ordentlichen}
+Mitglieder anwesend sind. Falls dieser geforderte Anteil nicht erreicht
+wird, ist die darauf folgende Mitgliederversammlung unabhängig von der
+Anzahl der erschienen Mitglieder beschlussfähig. Auf diesen Umstand muss
+in der Einladung zur Mitgliederversammlung besonders hingewiesen werden.
+Jedes ordentliche Mitglied hat eine Stimme. Fördermitglieder sind
+berechtigt, an den Versammlungen ohne Stimmrecht teilzunehmen.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsubsection*{§7 (Mitgliederversammlung), Abs. 7}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Die Mitgliederversammlung fasst ihre Beschlüsse mit einfacher Mehrheit
+der anwesenden Mitglieder, sofern in dieser Satzung nicht anders
+geregelt. Bei Stimmengleichheit gilt ein Antrag als abgelehnt.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Die Mitgliederversammlung fasst ihre Beschlüsse mit einfacher Mehrheit
+der anwesenden \emph{stimmberechtigten} Mitglieder, sofern in dieser Satzung
+nicht anders geregelt. Bei Stimmengleichheit gilt ein Antrag als
+abgelehnt.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\newpage
+\subsubsection*{§9 (Satzungsänderungen), Abs. 1}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Für Satzungsänderungen ist eine Dreiviertel-Mehrheit der anwesenden
+Vereinsmitglieder erforderlich. Über Satzungsänderungen kann in der
+Mitgliederversammlung nur abgestimmt werden, wenn auf diesen
+Tagesordnungspunkt bereits in der Einladung zur Mitgliederversammlung
+hingewiesen wurde und der Einladung sowohl der bisherige als auch der
+vorgesehene neue Satzungstext beigefügt wurde.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Für Satzungsänderungen ist eine Dreiviertel-Mehrheit der anwesenden
+\emph{stimmberechtigten} Vereinsmitglieder erforderlich. Über
+Satzungsänderungen kann in der Mitgliederversammlung nur abgestimmt
+werden, wenn auf diesen Tagesordnungspunkt bereits in der Einladung zur
+Mitgliederversammlung hingewiesen wurde und der Einladung sowohl der
+bisherige als auch der vorgesehene neue Satzungstext beigefügt wurde.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Zum Stimmrecht bei Änderung des Vereinszwecks gibt es mit
+Änderungsantrag 2 und 3 zwei Varianten, die nach Annahme dieses Antrags
+abgestimmt werden sollen.
+
+\vote{Quoren für För\-der\-mit\-glieder ein\-schränken}{22}{0}{0}
+Der Antrag wird per Handzeichen abgestimmt und einstimmig angenommen.
+
+
+\subsection{Änderungsantrag 2: Stimmrecht bei Änderung des Vereinszwecks
+auf ordentliche Mitglieder einschränken}
+Dieser Antrag soll nur nach Annahme von Änderungsantrag 1 abgestimmt
+werden und steht in Konkurrenz zu Änderungsantrag 3. Analog zu den
+übrigen Bestimmungen sollen nur ordentliche Mitglieder Stimmrecht bei
+Änderung des Vereinszwecks erhalten.
+
+\subsubsection*{§9 (Satzungsänderungen), Abs. 2}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Zur Änderung des Vereinszwecks ist die Zweidrittel-Mehrheit aller
+Vereinsmitglieder erforderlich, wobei die Zustimmung der nicht
+anwesenden Mitglieder per Textform erfolgen kann.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Zur Änderung des Vereinszwecks ist die Zweidrittel-Mehrheit aller
+\emph{ordentlichen} Vereinsmitglieder erforderlich, wobei die Zustimmung der
+nicht anwesenden Mitglieder per Textform erfolgen kann.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\vote{Stimmrecht bei Änderung des Vereinszwecks auf ordentliche Mitglieder
+einschränken}{16}{3}{3} Die Abstimmung per Handzeichen ergibt 16 pro (72.7\%), 3
+contra, 3 Enthaltungen. Der Antrag ist damit abgewiesen.
+
+
+\subsection{Änderungsantrag 3: Fördermitglieder haben je eine Stimme bei
+Änderung des Vereinszwecks}
+Dieser Antrag soll nur nach Annahme von Antrag 1 abgestimmt werden und
+steht in Konkurrenz zu Änderungsantrag 2. Da Fördermitglieder vorrangig
+die gemeinnützigen Zwecke des Vereins fördern, sollen sie auch ein
+Mitspracherecht bei deren Änderung haben.
+
+\newpage
+\subsubsection*{§9 (Satzungsänderungen), Abs. 2}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Zur Änderung des Vereinszwecks ist die Zweidrittel-Mehrheit aller
+Vereinsmitglieder erforderlich, wobei die Zustimmung der nicht
+anwesenden Mitglieder per Textform erfolgen kann.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Zur Änderung des Vereinszwecks ist die Zweidrittel-Mehrheit aller
+Vereinsmitglieder erforderlich, wobei die Zustimmung der nicht
+anwesenden Mitglieder per Textform erfolgen kann. \emph{Fördermitglieder haben
+hierbei, abweichend von den übrigen Bestimmungen dieser Satzung, je eine
+Stimme.}
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\withdrawn
+Nach Diskussion im Plenum wird dieser Antrag wird vom Antragsteller
+zurückgezogen. Argumente: es handelt sich hierbei nur um "`nettes"' und
+"`demokratisches"' Verhalten gegenüber Fördermitgliedern, dieser können aber ja
+trotzdem immer noch austreten, falls ihnen der Satzungszweck nicht mehr passt.
+Außerdem könnten viele Fördermitglieder einige wenige ordentliche Mitglieder
+überstimmen, was nicht gewünscht wird. Falls außerdem zusätzlich Änderungsantrag
+4 "`Wechsel der Art der Mitgliedschaft vereinfachen"' angenommen würde (siehe
+\ref{uxe4nderungsantrag-4-wechsel-der-art-der-mitgliedschaft-vereinfachen}),
+könnten Fördermitglieder vor einer Zweckänderung zudem einfach wechseln.
+
+
+\subsection{Änderungsantrag 4: Wechsel der Art der Mitgliedschaft vereinfachen}
+\label{uxe4nderungsantrag-4-wechsel-der-art-der-mitgliedschaft-vereinfachen}
+Da die Satzung bisher keinen Wechsel der Art der Mitgliedschaft vorsieht
+(z.~B. von ordentlicher zu Fördermitgliedschaft), wird dieser Vorgang
+vorstandsintern bisher als Aus- und Wiedereintritt behandelt, was (wegen
+des Wiedereintritts) zwingend eine Vorstandsentscheidung mit Abstimmung
+voraussetzt. Um den Aufwand für den Vorstand zu vereinfachen, kann diese
+Abstimmung im Prinzip entfallen, da das Mitglied ja weiterhin Mitglied
+bleibt. Es gibt hier für den Vorstand auch keinen sinnvollen Grund,
+einen solchen Antrag abzulehnen -- das Mitglied sollte selbst am besten
+wissen, wie viel Geld es am besten in den Verein investieren kann.
+
+\subsubsection*{§4 (Mitgliedschaft), Abs. 5}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Ein Austritt ist jederzeit möglich und wird durch Willenserklärung in
+Textform gegenüber dem Vorstand vollzogen.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Ein Austritt \emph{oder ein Wechsel der Art der Mitgliedschaft} ist jederzeit
+möglich, und wird durch Willenserklärung in Textform gegenüber dem
+Vorstand vollzogen.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+In der Diskussion wird als Argument angeführt, dass die Formulierung
+"`jederzeit"' Missbrauchspotenzial bietet. Beispielsweise könnten
+Fördermitglieder kurz vor Mitgliederversammlungen ihre Mitgliedschaft zum
+ordentlicher Mitglied umwandeln und somit Stimmrecht erhalten, ohne das ganze
+Jahr über den vollen Mitgliedsbeitrag zahlen zu müssen. Es wird daher empfohlen,
+stattdessen Formulierungen wie "`zum Anfang des Monats"' etc. einzufügen.
+
+\newpage
+Laut dem Schatzmeister wird der Wechsel der Mitgliedschaft bisher zwar nicht mit
+diesem Hintergrund ausgenutzt, und der Vorstand kann notfalls auch jederzeit
+ohne Angabe von Gründen Mitglieder ausschließen.
+
+\vote{Wechsel der Art der Mitgliedschaft vereinfachen}{3}{9}{10}
+Die Abstimmung erfolgt per Handzeichen und ergibt 3 pro, 9 contra, 10
+Enthaltungen. Der Änderungsantrag ist somit abgewiesen.
+
+
+\subsection{Änderungsantrag 5: Übertragung der Mitgliederrechte auf
+Repräsentanten}
+Die Übertragung des Stimmrechts von Mitgliedern kam auf vergangenen
+Versammlungen vor und wurde dort informell behandelt, wird sich aber
+auch in Zukunft nicht vermeiden lassen. Daher sollte die Satzung diesen
+Fall vorsehen.
+
+Anmerkungen:
+
+\begin{itemize}
+\item
+  Repräsentant ist wie Mitglied zu behandeln, zählt also insbesondere
+  nicht als Gast und hat damit Anwesenheitsrecht auf der
+  Mitgliederversammlung. Zusätzlich aus Verständlichkeitsgründen nochmal
+  die Formulierung für Beschlussfähigkeit in Abs. 6.
+\item
+  Beschränkung auf ein vertretenes Mitglied pro Repräsentant, um
+  mögliche Stimmenkumulation auf anwesende Mitglieder zu vermeiden, die
+  diese Stimmen in Diskussionen als Druckmittel einsetzen könnten.
+\item
+  Schriftform (§126 BGB) als brauchbarer Mittelweg, kann auch durch
+  elektronische Übermittlung des Dokuments (Scan per E-Mail, Fax)
+  gewahrt werden. Unter Textform würde z.B. auch IRC fallen, was nicht
+  fälschungssicher genug ist, mündliche Aussagen sind nicht ausreichend
+  nachvollziehbar.
+\end{itemize}
+
+\subsubsection*{§7 (Mitgliederversammlung), Abs. 6}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Jede satzungsmäßig einberufene Mitgliederversammlung wird als
+beschlussfähig anerkannt, sofern mindestens 23\% der Mitglieder anwesend
+sind. Falls dieser geforderte Anteil nicht erreicht wird, ist die darauf
+folgende Mitgliederversammlung unabhängig von der Anzahl der erschienen
+Mitglieder beschlussfähig. Auf diesen Umstand muss in der Einladung zur
+Mitgliederversammlung besonders hingewiesen werden. Jedes ordentliche
+Mitglied hat eine Stimme. Fördermitglieder sind berechtigt, an den
+Versammlungen ohne Stimmrecht teilzunehmen.
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+Jede satzungsmäßig einberufene Mitgliederversammlung wird als
+beschlussfähig anerkannt, sofern mindestens 23\% der Mitglieder anwesend
+sind \emph{oder durch Repräsentanten repräsentiert werden}. Falls dieser
+geforderte Anteil nicht erreicht wird, ist die darauf folgende
+Mitgliederversammlung unabhängig von der Anzahl der erschienen
+Mitglieder beschlussfähig. Auf diesen Umstand muss in der Einladung zur
+Mitgliederversammlung besonders hingewiesen werden. Jedes ordentliche
+Mitglied hat eine Stimme. Fördermitglieder sind berechtigt, an den
+Versammlungen ohne Stimmrecht teilzunehmen.
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\newpage
+\subsubsection*{§7 (Mitgliederversammlung), Abs. 10}
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+alter Text:
+\strut\end{minipage} &
+\begin{minipage}[b]{0.47\columnwidth}\raggedright\strut
+neuer Text:
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\emph{(Absatz wird neu eingefügt)}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\emph{Bei Nichtanwesenheit auf der Mitgliederversammlung kann ein Mitglied
+seine Mitgliederrechte für die Dauer der Versammlung auf eine andere
+Person (Repräsentant) übertragen. Die Repräsentanten üben die
+Mitgliederversammlung betreffend in allen Belangen die Rechte und
+Pflichten des Mitglieds aus, das durch sie vertreten wird, und sind
+dementsprechend im Rahmen der Mitgliederversammlung wie Mitglieder im
+Sinne dieser Satzung zu behandeln. Dabei darf ein Repräsentant zu keiner
+Zeit mehr als ein Mitglied vertreten. Falls ein Mitglied als
+Repräsentant benannt wird, werden dessen Rechte als Mitglied dadurch
+nicht eingeschränkt, in diesem Fall kann ein Mitglied also bis zu zwei
+Mitglieder, inkl. sich selbst, repräsentieren. Die Übertragung der
+Mitgliederrechte ist dem Vorstand vom entsprechenden Mitglied spätestens
+bis zu Beginn der Versammlung in Schriftform bekannt zu machen, wobei
+der Repräsentant namentlich benannt werden muss.}
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\vote{Übertragung der Mitglieder\-rechte auf Re\-präsentanten}{1}{13}{10}
+Dieser Vorschlag wurde im Vorfeld der Versammlung schon auf der Mailingliste
+diskutiert und fand dort geteilte Meinungen. Bei der Abstimmung per Handzeichen
+gibt es jedoch nur 1 Pro-Stimme, 13 dagegen, 10 Enthaltungen. Der Antrag ist
+somit abgelehnt.
+
+
+%%%%%%%%%%%
+%% TOP 4 %%
+%%%%%%%%%%%
+\section{Optionsrecht Mietvertrag}
+Der Mietvertrag für den Space 2.0 besagt in §2.4: \emph{"`Der Mieter kann von
+der Ausübung des Optionsrechts nur schriftlich bis spätestens 6 Monate vor
+Vertragsablauf bis zum 31.03.2016 Gebrauch machen."'} Über eine Verlängerung des
+Mietvertrages bis effektiv 31.9.2019 soll von der Mitgliederversammlung
+abgestimmt werden. Bei den laufenden Kosten von 10.000€/Jahr handelt es sich
+also um eine Abstimmung über insgesamt 30.000€.
+
+In der Diskussion werden folgende Punkte genannt:
+\begin{itemize}
+  \item \textbf{Vorteile der aktuellen Räumlichkeit:}
+  \begin{itemize}
+    \item günstige Lage: innenstadtnah, uninah, gute Parkplatzsituation,
+      Gewerbegebiet lässt Lärm zu
+    \item nach unserem Bedarf ausgebaut
+  \end{itemize}
+
+  \item \textbf{Nachteile der aktuellen Räumlichkeit:}
+  \begin{itemize}
+    \item nicht barrierefrei
+    \item Platz auch hier begrenzt, Wachstum hält Schritt
+  \end{itemize}
+
+  \item \textbf{Sonstige Punkte:}
+  \begin{itemize}
+    \item Platzangebot ist auch noch durch mehr Ordnung verbesserbar, Probleme
+      im Moment hauptsächlich bei gleichzeitig stattfindenden Terminen
+    \item Umzug erfordert aufmerksame Immobiliensuche bei aktuell schwieriger
+      Marktlage
+    \item nach aktueller Finanzlage nur etwa 100€/Monat mehr investierbar
+    \item sonst: Beiträge erhöhen, Pledgefunding betreiben
+    \item wir haben jetzt Übung im Renovieren
+    \item möglicherweise will Vermieterin nachverhandeln
+    \item Untervermietung für 5€/m² ist im Notfall auch immer noch möglich
+  \end{itemize}
+\end{itemize}
+
+Es spricht also anscheinend vieles dafür, in den aktuellen Räumlichkeiten zu
+bleiben und den Mietvertrag zu verlängern.
+
+\consensus{Die Mitgliederversammlung beauftragt den Vorstand, das Optionsrecht
+des aktuellen Mietvertrags auf die Verlängerung um weitere drei Jahre zu nutzen.}
+\paragraph{Beschlussvorlage:} \emph{Die Mitgliederversammlung beauftragt den
+Vorstand, das Optionsrecht des aktuellen Mietvertrags auf die Verlängerung um
+weitere drei Jahre zu nutzen.}
+
+Diese Beschlussvorlage wird per Handzeichen einstimmig angenommen.
+
+%%%%%%%%%%%
+%% TOP 5 %%
+%%%%%%%%%%%
+\section{Sonstiges}
+
+\subsection{Ansprechpartner für Konflikte} Nach den Diskussionen um die
+Gestaltung des EasterHeggs hatte der Vorstand sich in §5 seiner Geschäftsordnung
+zusätzlich die Aufgabe gegeben, als Ansprechpartner für Konflikte
+bereitzustehen.\footnote{siehe
+\url{https://stratum0.org/wiki/Vorstand/Geschäftsordnung}} Dies soll auch
+weiterhin gegeben sein. Es sollte aber zusätzlich eine Vertrauensperson außerhalb
+des Vorstands zur Verfügung stehen, falls Konflikte mit dem Vorstand auftreten
+oder Leute sich aus anderen Gründen nicht an den Vorstand wenden wollen. Falls
+es eine Person aus dem Verein gibt, die diese Funktion erfüllen würde, sollte
+die Mitgliederversammlung diese Person damit beauftragen. Die entsprechenden
+Prozesse sind im Vorstand schon definiert worden und könnten der Person als
+Vorlage dienen.
+
+Der Vorschlag, diesem Posten das Recht zu Anwesenheit bei
+den nichtöffentlichen Teilen von Vorstandssitzungen zu geben, wird vom Vorstand
+abgelehnt, da in den nichtöffentlichen Teilen oft auch andere
+datenschutzrechtliche Dinge behandelt werden. Außerdem könnte dieses Recht
+kontraproduktiv wirken, falls sich Leute mit Konflikten explizit an den Vorstand
+wenden, weil sie nicht mit der gewählten Vertrauensperson sprechen wollen.
+
+\consensus{Die Mitgliederversammlung benennt eine Entität als
+zusätzlichen Ansprechpartner, die neben dem Vorstand als Vertrauensperson im
+Verein zur Verfügung steht.}
+\paragraph{Beschlussvorlage:} \emph{Die Mitgliederversammlung benennt eine Entität als
+zusätzlichen Ansprechpartner, die neben dem Vorstand als Vertrauensperson im
+Verein zur Verfügung steht.}
+
+Die Beschlussvorlage wird per Handzeichen abgestimmt und einstimmig ohne
+Enthaltungen angenommen.
+
+\consensus{dStulle als Vertrauensperson beauftragen}
+dStulle meldet sich freiwillig für diesen Posten. Es wird per Handzeichen
+darüber abgestimmt, dStulle mit dieser Funktion zu beauftragen. Die Abstimmung
+fällt mehrheitlich dafür aus. Seine Kontaktdaten sind im Wiki\footnote{siehe
+\url{https://stratum0.org/wiki/Benutzer:dStulle}} ersichtlich.
+
+\subsection{Belüftung im Frickelraum}
+Vor die halbhohen Fenster im Chillraum und im Frickelraum wurden wegen besserer
+Isolierung neue Scheiben gesetzt, die sich nicht mehr öffnen lassen. Da die
+Luftzirkulation im Frickelraum somit nicht mehr stattfinden kann, sollte dort
+ein Lüfter eingebaut werden. Der Architekt hatte dafür einen Preis von etwa 500€
+genannt, die Vermieterin würde sich zur Hälfte an den Kosten beteiligen.
+Zusätzlich gab es schon unsererseits beim Ausbau im Rahmen des Space 2.0
+Planungen für eine Belüftungsanlage, die sich auf etwa 350€ beliefen.
+
+\consensus{Belüftung im Frickelraum einbauen}
+Generell ist die Versammlung dafür, den Frickelraum besser zu belüften. Der
+Vorstand wird sich dementsprechend weiter darum kümmern.
+
+\subsection{Sport als Vereinszweck}
+Es wird eine kurze, generelle Diskussion angestoßen, ob Sport in den
+Vereinszweck aufgenommen werden soll. Damit könnten z.~B. CTFs oder Lockpicking
+abgedeckt werden. Möglicherweise wäre es somit möglich, Geld z.~B. beim
+Stadtsportbund zu beantragen.
+
+Es ist noch nicht klar, inwiefern sich der Vereinszweck Sport auf die
+Steuerbegünstigung auswirkt. Da diese Frage auch schon in einer Vorstandssitzung
+auftrat, sollen in Zukunft mehr Informationen dazu zusammengetragen werden.
+
+\subsection{Termin Nächste Mitgliederversammlung}
+Der Termin dieser Mitgliederversammlung wurde relativ kurzfristig angekündigt,
+weshalb einige Mitglieder nicht erscheinen konnten. Deshalb wird an dieser
+Stelle schon einmal angekündigt, dass der erste Sonntag im Dezember, also der 4.
+Dezember 2016 als Termin für die nächste Mitgliederversammlung ins Auge gefasst
+wird. Der Termin scheint bisher allen Anwesenden zu passen.
+
+\begin{description}
+  \item[Veranstaltung geschlossen] um 18:58
+\end{description}
+
+
+%%%%%%%%%%%%%%%%%%%%
+%% Unterschriften %%
+%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\section*{Unterschriften}
+\vspace{0.7cm}
+\noindent Protokollführer: \hrulefill\hfill\phantom{c}\par
+\vspace{0.7cm}
+\noindent Vorstandsvorsitzender: \hrulefill\hfill\phantom{c}\par
+\vspace{0.7cm}
+\noindent Stellv. Vorsitzender: \hrulefill\hfill\phantom{c}\par
+\vspace{0.7cm}
+\noindent Schatzmeister: \hrulefill\hfill\phantom{c}\par
+\vspace{0.7cm}
+\noindent Beisitzer: \hrulefill\hfill\phantom{c}\par
+\vspace{0.7cm}
+\noindent Beisitzerin: \hrulefill\hfill\phantom{c}\par
+\vspace{0.7cm}
+\noindent Beisitzer: \hrulefill\hfill\phantom{c}\par
+
+\end{document}

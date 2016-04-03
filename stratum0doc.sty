@@ -5,7 +5,6 @@
 \ProvidesPackage{stratum0doc}
 \RequirePackage{tocloft}
 \RequirePackage{enumitem}
-\RequirePackage[compact]{titlesec}
 \RequirePackage{hyperref}
 
 %% Package options
@@ -63,9 +62,10 @@
 
 % optimize vertical spacing
 \setlist{nosep}
-\titlespacing{\section}{0pt}{12pt}{0pt}
-\titlespacing{\subsection}{0pt}{0.3em}{*0}
-\titlespacing{\subsubsection}{0pt}{0.3em}{*0}
+\RedeclareSectionCommand[beforeskip=1em]{section}
+\RedeclareSectionCommand[beforeskip=0.3em]{subsection}
+\RedeclareSectionCommand[beforeskip=0.3em]{subsubsection}
+\RedeclareSectionCommand[beforeskip=.5\baselineskip, afterskip=-1em]{paragraph}
 \setlength{\parskip}{0.5em plus 0.1em minus 0.3em}
 \setlength{\parindent}{0em}
 \setlength{\cftbeforesecskip}{0.3\baselineskip}

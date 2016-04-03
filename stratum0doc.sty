@@ -5,7 +5,6 @@
 \ProvidesPackage{stratum0doc}
 \RequirePackage{tocloft}
 \RequirePackage{enumitem}
-\RequirePackage[margin=2cm,outer=3.1cm]{geometry}
 \RequirePackage[compact]{titlesec}
 \RequirePackage{hyperref}
 
@@ -13,12 +12,19 @@
 \makeatletter
   \DeclareOption{transcript}{%
     \def\@sndsectionmark{TOP\ }%
+    \def\@sndoutermargin{3.1cm}
+    % enlarge page margin, for following \vote etc. commands
+    \addtolength{\textwidth}{-14pt}
+    \addtolength{\marginparwidth}{13pt}
   }
   \DeclareOption{legal}{
     \def\@sndsectionmark{§\ }
+    \def\@sndoutermargin{2cm}
   }
   \ExecuteOptions{transcript}
   \ProcessOptions\relax
+
+\RequirePackage[margin=2.5cm,outer=\@sndoutermargin]{geometry}
 \makeatother
 
 %% fancyhdr setup
@@ -64,15 +70,11 @@
 \setlength{\parindent}{0em}
 \setlength{\cftbeforesecskip}{0.3\baselineskip}
 \setlength{\parsep}{0pt}
-\setlength{\headsep}{12pt}
+\setlength{\headsep}{24pt}
 \setlength{\topskip}{0pt}
 \setlength{\topsep}{0pt}
 \setlength{\partopsep}{0pt}
 \setlength{\footskip}{32pt}
-
-% enlarge page margin, for following \vote etc. commands
-\addtolength{\textwidth}{-14pt}
-\addtolength{\marginparwidth}{13pt}
 
 %% votes
 %% Parameters: text, pros, contras, abstentions

@@ -1,0 +1,322 @@
+---
+title: Satzung des Stratum 0 e. V.
+date: 6\. Dezember 2015
+s0-thisdocinpdf-filename: Satzung.pdf
+s0-github-dokumente-filename: Satzung.markdown
+...
+
+§1 Name, Sitz, Geschäftsjahr
+============================
+
+(1)  Der Verein trägt den Namen Stratum 0 e. V.
+
+(2)  Er hat seinen Sitz in Braunschweig und wird dort in das
+     Vereinsregister eingetragen.
+
+(3)  Das Geschäftsjahr ist das Kalenderjahr.
+
+
+§2 Zweck
+========
+
+(1)  Der Verein ist parteipolitisch und weltanschaulich neutral.
+
+(2)  Der Verein setzt sich zum Zweck:
+
+     -   die Förderung der Erziehung und Volksbildung, insbesondere der
+         Informatik- und Medienkompetenz der breiten Öffentlichkeit,
+         sowie Aufklärung über und kritische Betrachtung von Risiken und
+         Möglichkeiten neuer Technologien
+
+     -   Kunst und Kultur in Hinblick auf den schöpferischen Umgang mit
+         Technologie zu fördern
+
+     -   Kriminalprävention zu leisten, insbesondere im Umgang mit
+         digitaler Informationsverarbeitungstechnik durch Aufklärung über
+         rechtliche Grundsätze, angemessene Verhaltensweisen und
+         Unterbreitung von Alternativen zu kriminellen Handlungsweisen
+
+(3)  Der Vereinszweck soll insbesondere verwirklicht werden durch:
+
+     -   die Bereitstellung und Pflege einer Räumlichkeit sowie der zur
+         Verwirklichung der Vereinszwecke nötigen Infrastruktur
+
+     -   die Organisation und Durchführung von lokalen Zusammenkünften
+         und Informationsveranstaltungen sowie Öffentlichkeitsarbeit
+
+     -   die Zusammenarbeit und der Austausch mit nationalen und
+         internationalen Gruppierungen, deren Ziele mit denen des Vereins
+         vereinbar sind
+
+
+§3 Selbstlosigkeit und Gemeinnützigkeit
+=======================================
+
+(1)  Der Verein ist selbstlos tätig; er verfolgt ausschließlich und
+     unmittelbar gemeinnützige Zwecke im Sinne des Abschnitts
+     „steuerbegünstigte Zwecke“ der Abgabenordnung und ist nicht auf
+     eigenwirtschaftliche Zwecke ausgerichtet.
+
+(2)  Mittel der Körperschaft dürfen nur für die satzungsmäßigen Zwecke
+     verwendet werden.
+
+(3)  Die Mitglieder erhalten in ihrer Eigenschaft als Mitglieder keine
+     Zuwendungen aus Mitteln der Körperschaft.
+
+(4)  Es darf keine Person durch Ausgaben, die dem Zweck der Körperschaft
+     fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt
+     werden.
+
+
+§4 Mitgliedschaft
+=================
+
+(1)  Jede natürliche oder juristische Person kann Mitglied des Vereins
+     werden.
+     Bei Minderjährigen ist die Zustimmung des gesetzlichen Vertreters
+     erforderlich.
+
+(2)  Die Mitgliedschaft im Verein ist auf zwei Arten möglich:
+
+     -   Ordentliche Mitglieder gestalten das Vereinsleben durch ihre
+         aktive Teilnahme mit.
+         Sie besitzen eine Stimmberechtigung auf den
+         Mitgliederversammlungen des Vereins.
+
+     -   Fördermitglieder unterstützen den Verein vorrangig durch ihren
+         regelmäßigen finanziellen Beitrag.
+         Sie besitzen keine Stimmberechtigung auf den
+         Mitgliederversammlungen.
+
+(3)  Die Beitrittserklärung erfolgt in Textform gegenüber dem Vorstand,
+     dieser entscheidet auch über den Antrag.
+
+(4)  Die Mitgliedschaft endet durch Austrittserklärung, durch Ausschluss,
+     durch Tod von natürlichen Personen oder durch Auflösung und
+     Erlöschung von juristischen Personen.
+
+(5)  Ein Austritt ist jederzeit möglich und wird durch Willenserklärung
+     in Textform gegenüber dem Vorstand vollzogen.
+
+(6)  Wenn ein Mitglied gegen die Ziele und Interessen des Vereins schwer
+     verstoßen hat oder trotz Mahnung mit dem Beitrag für 3 Monate im
+     Rückstand bleibt, so kann es durch den Vorstand mit sofortiger
+     Wirkung ausgeschlossen werden.
+     Dem Mitglied muss vor der Beschlussfassung Gelegenheit zur
+     Stellungnahme gegeben werden.
+     Der Vorstand muss dem auszuschließenden Mitglied den Beschluss in
+     Textform unter Angabe von Gründen mitteilen.
+     Gegen den Ausschließungsbeschluss kann innerhalb einer Frist von
+     23 Werktagen nach Mitteilung des Ausschlusses Berufung eingelegt
+     werden, über den die nächste Mitgliederversammlung entscheidet.
+     Bis zum Beschluss der Mitgliederversammlung ruht die Mitgliedschaft.
+
+
+§5 Beiträge
+===========
+
+(1)  Für die Regelung der Beiträge beschließt die Mitgliederversammlung
+     eine Beitragsordnung.
+
+
+§6 Organe des Vereins
+=====================
+
+(1)  Organe des Vereins sind
+
+     -   die Mitgliederversammlung
+     -   der Vorstand
+
+
+§7 Mitgliederversammlung
+========================
+
+(1)  Die Mitgliederversammlung ist mindestens einmal jährlich
+     einzuberufen.
+
+(2)  Eine Mitgliederversammlung ist außerdem einzuberufen, wenn es das
+     Vereinsinteresse erfordert, oder wenn die Einberufung von mindestens
+     23% der ordentlichen Vereinsmitglieder in Textform und unter Angabe
+     des Zweckes und der Gründe verlangt wird.
+
+(3)  Die Einberufung der Mitgliederversammlung erfolgt in Textform durch
+     den Vorstand unter Wahrung einer Einladungsfrist von mindestens
+     2 Wochen bei gleichzeitiger Bekanntgabe einer vorläufigen
+     Tagesordnung.
+     Die Frist beginnt mit dem Versanddatum.
+     Das Einladungsschreiben gilt dem Mitglied als zugegangen, wenn es an
+     die letzte vom Mitglied des Vereins in Textform bekannt gegebene
+     Adresse gerichtet ist.
+
+(4)  Die Mitgliederversammlung als das oberste beschlussfassende
+     Vereinsorgan ist grundsätzlich für alle Aufgaben zuständig, sofern
+     bestimmte Aufgaben gemäß dieser Satzung nicht einem anderen
+     Vereinsorgan übertragen wurden.
+     Ihr sind insbesondere die Jahresrechnung und der Jahresbericht zur
+     Beschlussfassung über die Genehmigung und die Entlastung des
+     Vorstandes schriftlich vorzulegen.
+     Sie bestellt zwei Rechnungsprüfer, die weder dem Vorstand noch einem
+     vom Vorstand berufenen Gremium angehören und auch nicht Angestellte
+     des Vereins sein dürfen, um die Buchführung einschließlich
+     Jahresabschluss zu prüfen und über das Ergebnis vor der
+     Mitgliederversammlung zu berichten.
+     Die Mitgliederversammlung entscheidet z. B. auch über
+
+     -   Aufgaben des Vereins
+     -   An- und Verkauf sowie Belastung von Grundbesitz
+     -   Beteiligung an Gesellschaften
+     -   Aufnahme von Darlehen, die die Summe der monatlichen
+         Mitgliedsbeiträge überschreiten
+     -   Beschluss der Beitragsordnung
+     -   Satzungsänderungen
+     -   Auflösung des Vereins
+
+(5)  Die Mitgliederversammlung gibt sich bei Bedarf eine
+     Geschäftsordnung.
+
+(6)  Jede satzungsmäßig einberufene Mitgliederversammlung wird als
+     beschlussfähig anerkannt, sofern mindestens 23% der ordentlichen
+     Mitglieder anwesend sind.
+     Falls dieser geforderte Anteil nicht erreicht wird, ist die darauf
+     folgende Mitgliederversammlung unabhängig von der Anzahl der
+     erschienen Mitglieder beschlussfähig.
+     Auf diesen Umstand muss in der Einladung zur Mitgliederversammlung
+     besonders hingewiesen werden.
+     Jedes ordentliche Mitglied hat eine Stimme.
+     Fördermitglieder sind berechtigt, an den Versammlungen ohne
+     Stimmrecht teilzunehmen.
+
+(7)  Die Mitgliederversammlung fasst ihre Beschlüsse mit einfacher
+     Mehrheit der anwesenden stimmberechtigten Mitglieder, sofern in
+     dieser Satzung nicht anders geregelt.
+     Bei Stimmengleichheit gilt ein Antrag als abgelehnt.
+
+(8)  Die Ausübung des Stimmrechts auf der Mitgliederversammlung ist nur
+     möglich, wenn bis zum Zeitpunkt der Inanspruchnahme des e. g. Rechts
+     alle offenen Mitgliedsbeiträge des entsprechenden Mitglieds
+     beglichen wurden.
+
+
+§8 Der Vorstand
+===============
+
+(1)  Der Vorstand besteht aus mindestens 3 Mitgliedern: dem
+     Vorstandsvorsitzenden, dem stellvertretenden Vorsitzenden, dem
+     Schatzmeister und bis zu 3 Beisitzern.
+     Er vertritt den Verein gerichtlich und außergerichtlich.
+     Je zwei Vorstandsmitglieder, ausgenommen die Beisitzer, sind
+     gemeinsam vertretungsberechtigt.
+
+(2)  Der Vorstand wird von der Mitgliederversammlung für die Dauer von
+     einem Jahr gewählt.
+     Es kann durch Beschluss der Mitgliederversammlung auf eine Wahl der
+     Beisitzer verzichtet werden.
+     Die Bestätigung des Vorstandes oder die Wiederwahl der
+     Vorstandsmitglieder ist möglich.
+     Die jeweils amtierenden Vorstandsmitglieder bleiben im Amt, bis
+     Nachfolger gewählt sind.
+
+(3)  Dem Vorstand obliegt die Führung der laufenden Geschäfte des
+     Vereins.
+     Er hat insbesondere folgende Rechte:
+
+     -   Gremien benennen und ihnen Mittel und Zuständigkeiten zuweisen
+
+     -   Bestellen eines Geschäftsführers für die Geschäfte der
+         laufenden Verwaltung.
+         Dieser ist berechtigt, an den Sitzungen des Vorstandes beratend
+         und ohne Stimmrecht teilzunehmen.
+
+(4)  Vorstandssitzungen finden mindestens vierteljährlich statt.
+
+(5)  Mitglieder sind grundsätzlich berechtigt, an Vorstandssitzungen
+     ohne Stimmrecht und ohne Rederecht teilzunehmen.
+     Der Vorstand kann für einzelne Tagesordnungspunkte beschließen,
+     diese unter Ausschluss der restlichen Mitglieder zu behandeln.
+     Der Grund für den Ausschluss der Mitglieder muss im Protokoll
+     festgehalten werden.
+
+(6)  Die Einladung zu Vorstandssitzungen erfolgt durch ein Mitglied des
+     Vorstands in Textform unter Einhaltung einer Einladungsfrist von
+     mindestens 7 Tagen.
+     Die Einladung muss außerdem an geeigneter Stelle für alle
+     Mitglieder des Vereins veröffentlicht werden.
+
+(7)  Vorstandssitzungen sind beschlussfähig, wenn mindestens zwei
+     Drittel der Mitglieder des Vorstandes anwesend sind.
+     Der Vorstand fasst seine Beschlüsse mit einfacher Mehrheit der
+     Vorstandsmitglieder.
+
+(8)  Dringende Beschlüsse des Vorstands können auch in Textform oder
+     fernmündlich gefasst werden.
+     Der Beschluss gilt als angenommen, wenn mindestens zwei Drittel der
+     Vorstandsmitglieder zugestimmt haben.
+     Der Beschluss muss auf der nächstfolgenden regulären
+     Vorstandssitzung bestätigt werden.
+
+(9)  Ist die Anzahl der Vorstandsmitglieder z. B. durch Rücktritt auf
+     unter 3 gesunken, ist der restliche Vorstand verpflichtet,
+     unverzüglich, spätestens jedoch innerhalb von 14 Tagen, zu einer
+     zeitnahen Mitgliederversammlung einzuladen.
+
+(10) Für vakant gewordene Vorstandsposten wird auf der nächsten
+     Mitgliederversammlung jeweils ein Nachfolger bestimmt, der für die
+     restliche Dauer der Amtszeit seines Vorgängers im Amt bleibt.
+     Bei vakant gewordenen Beisitzerposten kann ein Nachfolger nach
+     Beschluss der Mitgliederversammlung entfallen.
+
+(11) Der Vorstand gibt sich eine Geschäftsordnung, worin unter anderem
+     die Aufgabenteilung des Vorstandes geregelt wird.
+
+(12) Die Amtszeit des auf der Gründungsversammlung gewählten Vorstandes
+     endet mit der ersten Mitgliederversammlung.
+
+
+§9 Satzungsänderung
+===================
+
+(1)  Für Satzungsänderungen ist eine Dreiviertel-Mehrheit der anwesenden
+     stimmberechtigten Vereinsmitglieder erforderlich.
+     Über Satzungsänderungen kann in der Mitgliederversammlung nur
+     abgestimmt werden, wenn auf diesen Tagesordnungspunkt bereits in
+     der Einladung zur Mitgliederversammlung hingewiesen wurde und der
+     Einladung sowohl der bisherige als auch der vorgesehene neue
+     Satzungstext beigefügt wurde.
+
+(2)  Zur Änderung des Vereinszwecks ist die Zweidrittel-Mehrheit aller
+     Vereinsmitglieder erforderlich, wobei die Zustimmung der nicht
+     anwesenden Mitglieder per Textform erfolgen kann.
+
+(3)  Satzungsänderungen, die von Aufsichts-, Gerichts- oder
+     Finanzbehörden aus formalen Gründen verlangt werden, kann der
+     Vorstand von sich aus vornehmen.
+     Diese Satzungsänderungen müssen allen Vereinsmitgliedern alsbald
+     per Textform mitgeteilt werden.
+
+
+§10 Beurkundung von Beschlüssen
+===============================
+
+(1)  Die in Vorstandssitzungen und in Mitgliederversammlungen gefassten
+     Beschlüsse sind schriftlich niederzulegen und vom Vorstand, sowie
+     vom Protokollanten, der vor jeder Sitzung bestimmt wird, zu
+     unterzeichnen.
+
+
+§11 Auflösung des Vereins und Vermögensbindung
+==============================================
+
+(1)  Für den Beschluss, den Verein aufzulösen, ist eine
+     Dreiviertel-Mehrheit der in der Mitgliederversammlung anwesenden
+     Mitglieder erforderlich.
+     Der Beschluss kann nur nach rechtzeitiger Ankündigung in der
+     Einladung zur Mitgliederversammlung gefasst werden.
+
+(2)  Bei Auflösung oder Aufhebung des Vereins, des Verlustes seiner
+     Rechtsfähigkeit oder bei Wegfall seines steuerbegünstigten Zweckes
+     fällt das Vermögen des Vereins nach Erfüllung sämtlicher
+     Verpflichtungen an eine durch die letzte Mitgliederversammlung
+     bestimmte steuerbegünstigte Körperschaft, die es unmittelbar und
+     ausschließlich für gemeinnützige Zwecke im Sinne des §2 zu
+     verwenden hat.
+

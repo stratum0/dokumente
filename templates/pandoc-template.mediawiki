@@ -1,0 +1,19 @@
+<!--
+  -- Note: This page has been generated with pandoc from
+  -- https://github.com/stratum0/stratum0-dokumente/$s0-github-dokumente-filename$
+  -- See https://github.com/stratum0/stratum0-dokumente/README.md
+  -->
+{{Hinweis|
+* Dieses Dokument als PDF: [[Media:$s0-thisdocinpdf-filename$]]
+* Dieses Dokument wird in einem [https://github.com/stratum0/stratum0-dokumente/$s0-github-dokumente-filename$ GitHub-Repository] gepflegt. Änderungsanträge dürfen als [https://help.github.com/articles/using-pull-requests Pull Request] gestellt werden.
+}}
+
+<h1 style="text-align:center;border-bottom:none">$title$</h1>
+<div style="text-align:center;padding-bottom:2em">$date$</div>
+
+{{Navigationsleiste Offizielle Dokumente}}
+__TOC__
+
+$body$
+
+[[Kategorie:Dokumente]]

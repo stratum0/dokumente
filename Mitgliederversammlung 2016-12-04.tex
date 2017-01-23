@@ -1,16 +1,17 @@
-%\documentclass{s0minutes}    % FIXME
-\documentclass[parskip=half-]{s0minutes}
-%\documentclass[parskip=full-]{s0minutes}   % FIXME
+\documentclass{s0minutes}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{longtable}
+\usepackage{booktabs} % professional tables
 \usepackage{multicol}
 \usepackage{wasysym}  % for \diameter
 \usepackage{textcomp} % for €
 
-\meetingminutes{\generalassembly}{2016-12-04}{14:00}{Stratum 0,
+\meetingminutes{\generalassembly}{4. Dezember 2016}{14:00}{Stratum 0,
 Braunschweig}{27 stimmberechtigte Mitglieder,\\ & 1 nicht stimmberechtigtes
 Mitglied,\\ & keine Gäste}{}{rohieb}
+
+\title{7.\, Mitgliederversammlung}
 
 \begin{document}
 \maketitle
@@ -19,21 +20,23 @@ Mitglied,\\ & keine Gäste}{}{rohieb}
 %% TOP 0  %%
 %%%%%%%%%%%%
 \section{Protokoll-Overhead}
-\paragraph{Eröffnung der Versammlung} durch den Vorstandsvorsitzenden um 14:17
-\paragraph{Wahl der Versammlungsleitung:} larsan, einstimmig durch Handzeichen
-	bei 1 Enthaltung
-\paragraph{Wahl der Protokollführung:} rohieb, einstimmig durch Handzeichen
-\paragraph{Quoren:} zum Tag der Mitgliederversammlung hat der Verein insgesamt 78
-	Mitglieder, davon 66 ordentliche Mitglieder.
-	\begin{itemize}
-		\item 15{,}1 Mitglieder = 23\% der ordentlichen Mitglieder für
-			Beschlussfähigkeit
-		\item 13{,}5 Mitglieder = 50\% der anwesenden, stimmberechtigten Mitglieder
-			für Annahme eines Antrags
-	\end{itemize}
-\paragraph{Beschlussfähigkeit:} 27 von geforderten 15{,}1 stimmberechtigten
-Mitglieder anwesend, die Versammlung ist damit beschlussfähig.
-\paragraph{Notation für Abstimmungen:} (Pro-Stimmen/Contra-Stimmen/Enthaltungen)
+\begin{description}
+  \item[Eröffnung der Versammlung] durch den Vorstandsvorsitzenden um 14:17
+  \item[Wahl der Versammlungsleitung:] larsan, einstimmig durch Handzeichen
+    bei 1 Enthaltung
+  \item[Wahl der Protokollführung:] rohieb, einstimmig durch Handzeichen
+  \item[Quoren:] zum Tag der Mitgliederversammlung hat der Verein insgesamt 78
+    Mitglieder, davon 66 ordentliche Mitglieder.
+    \begin{itemize}
+      \item 15{,}1 Mitglieder = 23\% der ordentlichen Mitglieder für
+        Beschlussfähigkeit
+      \item 13{,}5 Mitglieder = 50\% der anwesenden, stimmberechtigten Mitglieder
+        für Annahme eines Antrags
+    \end{itemize}
+  \item[Beschlussfähigkeit:] 27 von geforderten 15{,}1 (23\%) stimmberechtigten
+    Mitglieder anwesend, die Versammlung ist damit beschlussfähig.
+  \item[Notation für Abstimmungen:] (Pro-Stimmen/Contra-Stimmen/Enthaltungen)
+\end{description}
 
 %%%%%%%%%%%%%
 %% TOP 1   %%
@@ -56,59 +59,58 @@ Die Zahlen beziehen sich auf den Zeitraum 1.\,Dezember 2015 bis 30.\,November
 
 \newpage
 
-\begin{longtable}{|l|r|r|}
-  \hline
+\begin{longtable}{lr>{\textcolor{red}\bgroup}r<{\egroup}}
   \textbf{Bereich} & \textbf{Einnahmen [€]} & \textbf{Ausgaben [€]} \\
-  \hline
+  \midrule
   \endfirsthead
-  \multicolumn{3}{l}{\emph{(Fortsetzung von vorheriger Seite)}} \\
-  \hline
+  \multicolumn{3}{c}{\emph{(Fortsetzung von vorheriger Seite)}} \\
+  \\
   \textbf{Bereich} & \textbf{Einnahmen [€]} & \textbf{Ausgaben [€]} \\
-  \hline
+  \midrule
   \endhead
-  \multicolumn{3}{l}{\emph{(Fortsetzung auf nächster Seite)}} \\
+  \\
+  \multicolumn{3}{c}{\emph{(Fortsetzung auf nächster Seite)}} \\
   \endfoot
   \endlastfoot
   Ideeller Bereich: Allgemein       & 12{.}106{,}61 &  -2{.}220{,}52 \\
   \quad davon Mitgliedsbeiträge     & 11{.}314{,}98 &                \\
   \quad davon Spenden               &      445{,}00 &                \\
-	\quad davon allgemeine Ausgaben   &               &      -165{,}43 \\
+  \quad davon allgemeine Ausgaben   &               &      -165{,}43 \\
   \quad davon Kontoführungsgebühren &               &      -106{,}03 \\
   \quad davon Vereinsserver         &               &      -678{,}47 \\
-	\quad davon Bekleidung            &               &  -1{.}270{,}59 \\
-  \hline
+  \quad davon Bekleidung            &               &  -1{.}270{,}59 \\
+  \midrule
   Ideeller Bereich: Projekte        &      562{,}04 &  -1{.}307{,}50 \\
   \quad davon Bastelmaterial        &               &       -89{,}60 \\
   \quad davon Stickmaschine         &       41{,}07 &      -170{,}95 \\
   \quad davon Schneidplotter        &       45{,}21 &      -133{,}20 \\
   \quad davon 3D-Drucker            &       75{,}76 &      -240{,}31 \\
   \quad davon Freifunk              &      300{,}00 &      -340{,}45 \\
-	\quad davon CoderDojo             &      100{,}00 &      -332{,}99 \\
-  \hline
-	Ideeller Bereich: Space           &  2{.}119{,}26 & -12{.}712{,}76 \\
+  \quad davon CoderDojo             &      100{,}00 &      -332{,}99 \\
+  \midrule
+  Ideeller Bereich: Space           &  2{.}119{,}26 & -12{.}712{,}76 \\
   \quad davon Rundfunkgebühr        &               &       -69{,}96 \\
-	\quad davon Miete und Nebenkosten &  2{.}119{,}26 & -12{.}289{,}40 \\
+  \quad davon Miete und Nebenkosten &  2{.}119{,}26 & -12{.}289{,}40 \\
   \quad davon Verbrauchsmaterial    &               &      -121{,}60 \\
-	\quad davon Einrichtung           &               &      -231{,}80 \\
-  \hline
+  \quad davon Einrichtung           &               &      -231{,}80 \\
+  \midrule
   Vermögensverwaltung               &        0{,}00 &         0{,}00 \\
-  \hline
+  \midrule
   Zweckbetriebe                     &        0{,}00 &         0{,}00 \\
-  \hline
+  \midrule
   Wirtschaftlicher Geschäftsbetrieb &  5{.}160{,}48 &  -4{.}700{,}05 \\
   \quad (Matekasse) && \\
-  \hline
+  \midrule
   Mankobuchungen                    &        3{,}40 &        -1{,}22 \\
-  \hline
+  \midrule\midrule
   Gesamt:                           & 19{.}951{,}79 & -20{.}942{,}05 \\
-  \hline\hline
-	\textbf{Gewinn/Verlust Gesamt:}   &               &      -990{,}26 \\
-  \hline
+
+  \textbf{Gewinn/Verlust Gesamt:}   &               &      -990{,}26 \\
 \end{longtable}
 
 \paragraph{Gewinn- und Verlustrechnung} Von den Kassenprüfern wurde wiederholt
 angemerkt, dass zweckgebundene Spenden (z.\,B. für Stickmaschine,
-Schneidplotter, Freifunk) zeitnah ausgegeben oder zurück erstattet werden
+Schneidplotter, Freifunk) zeitnah ausgegeben oder zurückerstattet werden
 müssen. Das wurde dieses Jahr besser als zuvor verfolgt.
 
 Die Nebenkostenabrechnungen für 2014 sind hier noch nicht berücksichtigt, weil
@@ -129,7 +131,6 @@ finanzieren uns hauptsächlich durch Mitgliedsbeiträge und finanzieren dadurch
 hauptsächlich unsere Räumlichkeit.
 
 \paragraph{Saldo im Verlauf}
-%\enlargethispage{\baselineskip}
 Folie 14 des Finanzberichts zeigt den Kontosaldo über das Jahr. Hierbei sind
 regelmäßige Einbrüche durch die Überweisung der Miete erkennbar, sowie der
 kontinuierliche Anstieg durch Mitgliedsbeiträge (an dieser Stelle der
@@ -159,26 +160,39 @@ Auf Folie 17 wird der Spendenverlauf genauer aufgeschlüsselt. Der Graph ist seh
 unkontinuierlich, da die einzelnen Spendenboxen nur nach Bedarf geleert werden.
 
 Die Gegenüberstellung von monatlichen Einnahmen und regelmäßigen Verpflichtungen
-(Folie 20) zeigt dieses Jahr ein geringes Defizit:
+(Folie~20) zeigt dieses Jahr ein geringes Defizit:
 
-\begin{longtable}{|lrr|lr|}
-  \hline
-	\multicolumn{3}{|c|}{\textbf{Einnahmen [€/Monat]}} &
-	\multicolumn{2}{c|}{\textbf{Verpflichtungen [€/Monat]}} \\
-  \hline
-	Mitgliedsbeiträge: & \diameter &  943 & Miete, Nebenkosten:      & 630 \\
-  Spenden:           & \diameter &   37 & Strom:                   & 240 \\
-                     &           &      & Internet:                &  42 \\
-                     &           &      & Server, Domain:          &  57 \\
-                     &           &      & Haftpflichtversicherung: &  12 \\
-                     &           &      & Domain stratum0.org:     &   1 \\
-  \hline\hline
-	\textbf{Gesamt:} & \textbf{\diameter} & \textbf{980} & \textbf{Gesamt:} & \textbf{982} \\
-  \hline
-\end{longtable}
+\begin{center}
+\begin{multicols}{2}
+\begin{tabular}{lrr}
+  \textbf{Einnahmen} & \multicolumn{2}{c}{\textbf{€/Monat}} \\
+  \midrule
+  Mitgliedsbeiträge & \diameter &  943 \\
+  Spenden           & \diameter &   37 \\
+                    &           &      \\
+                    &           &      \\
+                    &           &      \\
+                    &           &      \\
+  \midrule
+  \textbf{Gesamt} & \textbf{\diameter} & \textbf{980} \\
+\end{tabular}
+\begin{tabular}{lr}
+  \multicolumn{1}{c}{\textbf{Verpflichtungen}} & \textbf{€/Monat} \\
+  \midrule
+  Miete, Nebenkosten      & 630 \\
+  Strom                   & 240 \\
+  Internet                &  42 \\
+  Server, Domain          &  57 \\
+  Haftpflichtversicherung &  12 \\
+  Domain stratum0.org     &   1 \\
+  \midrule
+  \textbf{Gesamt:} & \textbf{982} \\
+\end{tabular}
+\end{multicols}
+\end{center}
 
 Im Vergleich zum Vorjahr ist das Niveau der Mitgliedsbeiträge und Spenden dieses
-Jahr niedriger gewesen, was sich im negativen Gesamtsaldo der GEwinn- und
+Jahr niedriger gewesen, was sich im negativen Gesamtsaldo der Gewinn- und
 Verlustrechnung widerspiegelt.
 
 \paragraph{Mitgliederentwicklung}
@@ -191,23 +205,14 @@ wie viele Mitglieder den ermäßigten Beitrag zahlen, hat der Schatzmeister zu
 diesem Zeitpunkt keine Zahlen vorliegen.
 
 \paragraph{Bestände}
-Die Kontobestände zum Zeitpunkt der Kassenprüfung am 30.\,November (Folie 25)
+Die Kontostände zum Zeitpunkt der Kassenprüfung am 30.\,November (Folie 25)
 sehen wie folgt aus:\footnote{siehe auch laufender Finanzreport unter
 \url{https://data.stratum0.org/finanz/}}
 
-\begin{longtable}{|l|r|}
-  \hline
+\begin{center}
+\begin{tabular}{lr}
   \textbf{Konto} & \textbf{Saldo [€]} \\
-  \hline
-  \endfirsthead
-  \multicolumn{2}{l}{\emph{(Fortsetzung von vorheriger Seite)}} \\
-  \hline
-  \textbf{Konto} & \textbf{Saldo [€]} \\
-  \hline
-  \endhead
-  \multicolumn{2}{l}{\emph{(Fortsetzung auf nächster Seite)}} \\
-  \endfoot
-  \endlastfoot
+  \midrule
   (B) Barkasse Stratum0                    &     275{,}81 \\
   (D) 3D-Drucker Filamentspenden           &       0{,}00 \\
   (P) Pfand für Physische Schlüssel        &     240{,}00 \\
@@ -217,10 +222,10 @@ sehen wie folgt aus:\footnote{siehe auch laufender Finanzreport unter
   (M) Matekasse                            &      33{,}37 \\
   (R) Rückstellungen Giro                  & 3{.}160{,}00 \\
   (G) Business Direct                      & 1{.}776{,}06 \\
-  \hline
-	\textbf{Gesamt:}                 & \textbf{5{.}682{,}97} \\
-  \hline
-\end{longtable}
+  \midrule
+  \textbf{Gesamt:}                 & \textbf{5{.}682{,}97} \\
+\end{tabular}
+\end{center}
 
 Hierbei nochmals die Anmerkung, dass die restlichen Spenden für die Stickmaschine
 schnellstens zweckgebunden ausgegeben werden müssen. Die Verbrauchsmaterialkasse
@@ -231,15 +236,15 @@ gegen Beleg und wird vom Schatzmeister nach Bedarf auf etwa 40\,€ aufgefüllt.
 Die Rückstellungen von 3{.}160\,€ ergeben sich wie folgt (Folie 26):
 
 \begin{center}
-\begin{longtable}{|l|r|}
-  \hline
-  \textbf{Zweck der Rücklage} & \textbf{Betrag} \\
-  \hline
-  Erhöhung Mietsicherheit Space 2.0 &     160{,}00\,€ \\
+\begin{tabular}{lr}
+  \textbf{Zweck der Rücklage} & \textbf{Betrag [€]} \\
+  \midrule
+  Erhöhung Mietsicherheit Space 2.0 &     160{,}00 \\
   \qquad (wurde bisher von der Vermieterin nicht eingefordert) & \\
-  Puffer Einnahmeausfälle           & 3{.}000{,}00\,€ \\
-  \hline
-\end{longtable}
+  Puffer Einnahmeausfälle           & 3{.}000{,}00 \\
+  \midrule
+  \textbf{Gesamt:}          & \textbf{3{.}160{,}00} \\
+\end{tabular}
 \end{center}
 
 Die Rücklage zur Erhöhung der Mietsicherheit von 160\,€ wurde allerdings auf der
@@ -264,7 +269,7 @@ im Frickelraum und auf dem Holodeck seit dem Sommer erklären lässt. Die
 Nebenkosten bewegen sich allerdings nach der Einschätzung des Schatzmeisters im
 durchschnittlichen Bereich für einen Raum unserer Größe. Allerdings sollte man
 die gestiegenen Nebenkosten mit etwa 100\,€ mehr im Monat in die laufenden
-Verpflichtungen einplanen, und ebenso die Einnahmen um den selben Betrag
+Verpflichtungen einplanen, und ebenso die Einnahmen um denselben Betrag
 steigern (z.\,B. durch Mitgliedsbeiträge, Spenden, oder Partys). Es wird auch
 nochmal darauf hingewiesen, dass die vor der Versammlung in bar eingenommenen
 Mitgliedsbeiträge noch nicht verbucht sind. Für einige Posten (Stickmaschine,
@@ -397,8 +402,8 @@ Valodim und Emantor beantragen die Entlastung des Vorstandes. Es wird per
 Handzeichen abgestimmt. 
 
 \begin{resolution}{MV 2016-01}{\vote{\adopted}{21}{0}{6}}{Entlastung des
-	Vorstandes}{}
-	Alle Vorstandsmitglieder enthalten sich.
+  Vorstandes}{}
+  Alle Vorstandsmitglieder enthalten sich.
 \end{resolution}
 
 Der Vorstand ist damit entlastet.
@@ -414,7 +419,7 @@ finden.\footnote{\url{https://stratum0.org/wiki/Datei:Jahresbericht2016.pdf}}
 Wichtige Punkte dieses Jahr im Wortprotokoll:
 
 Neue Fenster im Frickelraum, Nebenkosten, Wechsel der Hausverwaltung: Die
-Gottschalk Identität: NOWO immobilien, Die Gottschalk Verschwörung: BAHR, Das
+Gottschalk Identität: NOWO Immobilien, Die Gottschalk Verschwörung: BAHR, Das
 Gottschalk Ultimatum: WAG Salzgitter. Brief der Eigentümerin als
 „Entschuldigung“, Nebenkostenabrechnung 2015…? Aprilscherz auf der Homepage mit
 Stock Photos, Gründerquartier Braunschweig, es wurde Bier gebraut, es wurde
@@ -423,7 +428,7 @@ wurde gegessen, es wurde gegessen, es wurde gecampt, es wurde gegessen, es wurde
 mehr gegessen, es wurde gegessen. Filmcrew: Imagefilm zum Gründerquartier,
 Präsenz auf der MakerFaire, wir wurden dort gefragt „Was verkauft ihr denn
 eigentlich?“ – „Äh, Freizeit?“ Neuer Vereinsserver mit vielen virtuellen
-Maschinen, sogar ein paar sinvollen,
+Maschinen, sogar ein paar sinnvollen,
 Transparenzportal\footnote{\url{https://data.stratum0.org}} könnte noch
 gedeihen, Stromverbrauch ist gediehen, es wurde gegessen, es wurde vorgetragen,
 es gab Aufzeichnungen, aber es mangelt an verfügbarer Hardware und Zeit für die
@@ -440,40 +445,47 @@ rohieb schlägt vor, die Wahlen in der Geschäftsordnung der Mitgliederversammlu
 zu regeln. Das Verfahren der letzten Jahre hat sich bewährt und soll somit
 dokumentiert werden. Ein Entwurf wird diskutiert, kritisiert, angepasst und
 abgestimmt.\footnote{Abgestimmte Version des Entwurfs:
-\url{https://stratum0.org/mediawiki/index.php?oldid=14462}}
+\url{https://stratum0.org/mediawiki/index.php?oldid=14462}, Rechtschreibfehler
+wurden nachträglich im Zuge dieses Protokolls korrigiert.}
 
-\begin{resolution}{MV 2016-01}{\vote{\adopted}{27}{0}{0}}{Beschluss einer
-	Geschäftsordnung}{}
-	Beschlusstext:
+\begin{resolution}{MV 2016-02}{\vote{\adopted}{27}{0}{0}}{Beschluss einer
+  Geschäftsordnung}{}
+  Beschlusstext:
 
-	\itshape
-	\textbf{0. Wahlen}
-	\begin{enumerate}
-		\item[1.] Als Wahlmodus wird die Zustimmungswahl festgelegt. (Jede
-			stimmberechtigte Entität kann für jede kandidierende Entität eine Stimme
-			abgeben, Stimmenkumulation ist nicht möglich.)
-		\item[2.] Es wird in geheimer Wahl auf Stimmzetteln gewählt. Dabei dürfen
-			nur von der Versammlungsleitung genehmigte Stimmzettel genutzt werden.
-		\item[3.] Die Kandidaten mit den meisten Stimmen sind gewählt, sofern sie
-			mindestens die Stimmen von 50\% der Stimmberechtigten erhalten haben,
-			solange genug Posten für das entsprechende Amt zu besetzen sind.
-		\item[4.] Falls mehrere Posten für ein Amt zu vergeben sind (z.B. Beisitzer,
-			Rechnungsprüfer), findet die Besetzung absteigend nach Stimmenanzahl
-			statt, bis alle Posten des entsprechenden Amtes besetzt sind.
-		\item[5.] Falls sich durch Stimmengleichheit keine eindeutige Besetzung
-			ergibt, findet eine Stichwahl zwischen den entsprechenden Kandidaten mit
-			der gleichen Stimmenanzahl statt. Eine Nachwahl findet jeweils für die
-			Posten Schatzmeister, stellv. Vorsitzender, oder Vorsitzender statt, falls
-			das entsprechende Amt nicht besetzt wurde.
-		\item[6.] Die Auswertung der Wahl erfolgt in der Reihenfolge
-			Vorstandsvorsitzender, stellv. Vorsitzender, Schatzmeister, Beisitzer,
-			Rechnungsprüfer. Kandidaten, die schon für ein Amt gewählt worden sind und
-			es angenommen haben, werden bei der Auswertung der nachfolgendenden Ämter
-			nicht mehr berücksichtigt.
-		\item[7.] Gewählte Kandidaten können von der Wahl zurücktreten. Die Annahme
-			der Wahl oder der Rücktritt von der Wahl ist auch fernmündlich möglich.
-	\end{enumerate}
+  \begin{quote}
+    \itshape
+    \textbf{0. Wahlen}
+    \begin{enumerate}
+      \item[1.] Als Wahlmodus wird die Zustimmungswahl festgelegt. (Jede
+        stimmberechtigte Entität kann für jede kandidierende Entität eine Stimme
+        abgeben, Stimmenkumulation ist nicht möglich.)
+      \item[2.] Es wird in geheimer Wahl auf Stimmzetteln gewählt. Dabei dürfen
+        nur von der Versammlungsleitung genehmigte Stimmzettel genutzt werden.
+      \item[3.] Die Kandidaten mit den meisten Stimmen sind gewählt, sofern sie
+        mindestens die Stimmen von 50\% der Stimmberechtigten erhalten haben,
+        solange genug Posten für das entsprechende Amt zu besetzen sind.
+      \item[4.] Falls mehrere Posten für ein Amt zu vergeben sind (z.B.
+        Beisitzer, Rechnungsprüfer), findet die Besetzung absteigend nach
+        Stimmenanzahl statt, bis alle Posten des entsprechenden Amtes besetzt
+        sind.
+      \item[5.] Falls sich durch Stimmengleichheit keine eindeutige Besetzung
+        ergibt, findet eine Stichwahl zwischen den entsprechenden Kandidaten mit
+        der gleichen Stimmenanzahl statt. Eine Nachwahl findet jeweils für die
+        Posten Schatzmeister, stellv. Vorsitzender, oder Vorsitzender statt,
+        falls das entsprechende Amt nicht besetzt wurde.
+      \item[6.] Die Auswertung der Wahl erfolgt in der Reihenfolge
+        Vorstandsvorsitzender, stellv. Vorsitzender, Schatzmeister, Beisitzer,
+        Rechnungsprüfer. Kandidaten, die schon für ein Amt gewählt worden sind
+        und es angenommen haben, werden bei der Auswertung der nachfolgenden
+        Ämter nicht mehr berücksichtigt.
+      \item[7.] Gewählte Kandidaten können von der Wahl zurücktreten. Die
+        Annahme der Wahl oder der Rücktritt von der Wahl ist auch fernmündlich
+        möglich.
+    \end{enumerate}
+  \end{quote}
 \end{resolution}
+
+Nachdem nun der Wahlmodus geregelt ist, kann gewählt werden.
 
 %%%%%%%%%%%%%
 %% TOP 3   %%
@@ -489,40 +501,44 @@ Jedes stimmberechtigte Mitglied hat vor Beginn der Veranstaltung einen
 Stimmzettel erhalten. Die Kandidaten, die sich vor der Veranstaltung schon zu
 einer Kandidatur entschieden hatten, sind schon auf den Stimmzetteln vorhanden.
 Es wird die Frage gestellt, ob es noch weitere Kandidaten gibt. whisp möchte
-spontan für ein Besitzeramt kandidieren und füllt damit Platz Nr. 8 auf dem
+spontan für ein Beisitzeramt kandidieren und füllt damit Platz Nr. 8 auf dem
 Stimmzettel. Niemand weiteres meldet sich, damit sieht die Kandidatenliste wie
 folgt aus:
 
 \begin{center}
 \begin{multicols}{2}
-\begin{tabular}{r l}
-	\multicolumn{2}{c}{\bfseries Vorstandsvorsitzender} \\ \hline 
-	1 & larsan \\
-	2 & Kasalehlia \\
-	\\
-	\multicolumn{2}{c}{\bfseries stellv. Vorstandsvorsitzender} \\ \hline
-	1 & larsan \\
-	2 & rohieb \\
-	\\
-	\multicolumn{2}{c}{\bfseries Rechnungsprüfer} \\ \hline
-	1 & sonnenschein \\
+\begin{tabular}{rl}
+  \multicolumn{2}{c}{\bfseries Vorstandsvorsitzender} \\
+  \midrule
+  1 & larsan \\
+  2 & Kasalehlia \\
+  \\
+  \multicolumn{2}{c}{\bfseries stellv. Vorstandsvorsitzender} \\
+  \midrule
+  1 & larsan \\
+  2 & rohieb \\
+  \\
+  \multicolumn{2}{c}{\bfseries Rechnungsprüfer} \\
+  \midrule
+  1 & sonnenschein \\
   2 & shoragan \\
-	\\
+  \\
 \end{tabular}
-\columnbreak
-\begin{tabular}{r l}
-	\multicolumn{2}{c}{\bfseries Schatzmeister} \\ \hline
-	1 & Emantor \\
-	\\
-	\multicolumn{2}{c}{\bfseries Beisitzer} \\ \hline
-	1 & chrissi\^{} \\
+\begin{tabular}{rl}
+  \multicolumn{2}{c}{\bfseries Schatzmeister} \\
+  \midrule
+  1 & Emantor \\
+  \\
+  \multicolumn{2}{c}{\bfseries Beisitzer} \\
+  \midrule
+  1 & chrissi\^{} \\
   2 & larsan \\
   3 & Kasalehlia \\
   4 & rohieb \\
   5 & reneger \\
   6 & hanhaiwen \\
   7 & Chaosgrille \\
-	8 & whisp \\
+  8 & whisp \\
 \end{tabular}
 \end{multicols}
 \end{center}
@@ -538,75 +554,86 @@ sich zur Auszählung zurück.
 
 \meetingbreak{zur Auszählung bis 16:35}
 
-\clearpage
 Nach der Pause gibt die Wahlleitung das Ergebnis bekannt. Es gab 27 gültige
 Stimmzettel. Das Quorum von 50\% Zustimmung liegt bei mindestens 14 Stimmen.
 
 \begin{center}
 \begin{multicols}{2}
 \begin{tabular}{r l l@{ Stimmen (}c@{\%)}}
-	\multicolumn{4}{c}{\bfseries Vorstandsvorsitzender} \\ \hline 
-	1 & larsan       & 20 & 74.1 \\
-	2 & Kasalehlia   & 20 & 74.1 \\
-	\\
-	\multicolumn{4}{c}{\bfseries stellv. Vorstandsvorsitzender} \\ \hline
-	1 & larsan       & 20 & 74.1 \\
-	2 & rohieb       & 25 & 92.5 \\
-	\\
-	\multicolumn{4}{c}{\bfseries Rechnungsprüfer} \\ \hline
-	1 & sonnenschein & 24 & 88.8 \\
-	2 & shoragan     & 22 & 81.5 \\
+  \multicolumn{4}{c}{\bfseries Vorstandsvorsitzender} \\
+  \midrule
+  1 & larsan       & 20 & 74.1 \\
+  2 & Kasalehlia   & 20 & 74.1 \\
+  \\
+  \multicolumn{4}{c}{\bfseries stellv. Vorstandsvorsitzender} \\
+  \midrule
+  1 & larsan       & 20 & 74.1 \\
+  2 & rohieb       & 25 & 92.5 \\
+  \\
+  \multicolumn{4}{c}{\bfseries Rechnungsprüfer} \\
+  \midrule
+  1 & sonnenschein & 24 & 88.8 \\
+  2 & shoragan     & 22 & 81.5 \\
 \end{tabular}
-\columnbreak
 \begin{tabular}{r l l@{ Stimmen (}c@{\%)}}
-	\multicolumn{4}{c}{\bfseries Schatzmeister} \\ \hline
-	1 & Emantor      & 27 & 100 \\
-	\\
-	\multicolumn{4}{c}{\bfseries Beisitzer} \\ \hline
-	1 & chrissi\^{}  & 25 & 92.5 \\
+  \multicolumn{4}{c}{\bfseries Schatzmeister} \\
+  \midrule
+  1 & Emantor      & 27 & 100 \\
+  \\
+  \multicolumn{4}{c}{\bfseries Beisitzer} \\
+  \midrule
+  1 & chrissi\^{}  & 25 & 92.5 \\
   2 & larsan       & 21 & 77.7 \\
   3 & Kasalehlia   & 22 & 81.5 \\
   4 & rohieb       & 19 & 70.4 \\
   5 & reneger      & 19 & 70.4 \\
   6 & hanhaiwen    & 18 & 66.7 \\
   7 & Chaosgrille  & 12 & 44.4 \\
-	8 & whisp        & 14 & 51.8 \\
+  8 & whisp        & 14 & 51.8 \\
 \end{tabular}
 \end{multicols}
 \end{center}
 
 \begin{description}
-	\item[Vorstandvorsitzender] Es gibt bei der Wahl des Vorstandvorsitzenden
-		einen Gleichstand zwischen larsan und Kasalehlia. larsan zieht seine
-		Kandidatur zurück. Kasalehlia nimmt die Wahl an.
-	\item[Stellv. Vorstandsvorsitzender] rohieb nimmt die Wahl an.
-	\item[Schatzmeister] Emantor nimmt die Wahl an.
-	\item[Beisitzer] chrissi\^{} nimmt die Wahl an. Kasalehlia ist schon als
-		Vorstandsvorsitzender gewählt und scheidet damit aus. larsan nimmt die Wahl
-		an.  rohieb ist schon als stellv. Vorstandsvorsitzender gewählt. reneger
-		nimmt die Wahl an.
-	\item[Rechnungsprüfer] sonnenschein und shoragan nehmen die Wahl an.
+  \item[Vorstandsvorsitzender:] Es gibt bei der Wahl des Vorstandsvorsitzenden
+    einen Gleichstand zwischen larsan und Kasalehlia. larsan zieht seine
+    Kandidatur an dieser Stelle zurück. Kasalehlia nimmt die Wahl an.
+  \item[Stellv. Vorstandsvorsitzender:] rohieb nimmt die Wahl an.
+  \item[Schatzmeister:] Emantor nimmt die Wahl an.
+  \item[Beisitzer:] chrissi\^{} nimmt die Wahl an. Kasalehlia ist schon als
+    Vorstandsvorsitzender gewählt und scheidet damit aus. larsan nimmt die Wahl
+    an.  rohieb ist schon als stellv. Vorstandsvorsitzender gewählt. reneger
+    nimmt die Wahl an.
+  \item[Rechnungsprüfer:] sonnenschein und shoragan nehmen die Wahl an.
 \end{description}
 
 \begin{resolution}{MV 2016-03}{}{Wahlen}{}
-Der neue Vorstand besteht damit aus:
-\begin{description}
-	\item[Vorstandsvorsitzender:] Kasalehlia (Hilko Boekhoff)
-	\item[stellv. Vorstandsvorsitzender:] rohieb (Roland Hieber)
-	\item[Schatzmeister:] Emantor (Rouven Czerwinski)
-	\item[Beisitzer:] chrissi\^{} (Chris Fiege), larsan (Lars Andresen), reneger
-		(René Stegmaier)
-\end{description}
+  Der neue Vorstand besteht somit aus:
 
-Als Rechnungsprüfer wurden shoragan (Jan Lübbe) und sonnenschein (Angela
-Schmidt) gewählt.
+  \begin{electionblock}
+    \elected{Vorstandsvorsitzender}{Kasalehlia (Hilko Boekhoff)}{74.1\%}
+    \elected{stellv. Vorstandsvorsitzender}{rohieb (Roland Hieber)}{92.5\%}
+    \elected{Schatzmeister}{Emantor (Rouven Czerwinski)}{100\%}
+    \elected{Beisitzer}{chrissi\^{} (Chris Fiege)}{92.5\%}
+    \elected{Beisitzer}{larsan (Lars Andresen)}{77.7\%}
+    \elected{Beisitzer}{reneger (René Stegmaier)}{70.4\%}
+  \end{electionblock}
+
+  Als Rechnungsprüfer, die nicht zum Vorstand zählen, wurden gewählt:
+
+  \begin{electionblock}
+    \elected{Rechnungsprüfer}{sonnenschein (Angela Schmitt)}{88.8\%}
+    \elected{Rechnungsprüfer}{shoragan (Jan Lübbe)}{81.5\%}
+  \end{electionblock}
 \end{resolution}
 
-Die Wahlen sind damit beendet. larsan dankt der Wahlleitung und den Wahlhelfern.
+Die Wahlen sind damit beendet. larsan dankt der Wahlleitung und den Wahlhelfern,
+und übernimmt wieder die Versammlungsleitung.
 
 %%%%%%%%%%%%%
 %% TOP 4   %%
 %%%%%%%%%%%%%
+\clearpage
 \section{Änderungen der Beitragsordnung}
 
 Der Antrag "`Monatliche Beiträge sollen glatte Centbeträge ergeben"' wurde von
@@ -615,7 +642,7 @@ eingebracht.\footnote{\url{https://github.com/stratum0/stratum0-dokumente/pull/2
 
 \paragraph{Begründung:} Fördermitglieder zahlen einen Jahresbeitrag, ordentliche
 Mitglieder zahlen einen monatlichen Beitrag. Die Sollbuchung aller
-Mitgliedsbeiträge erfolgt aber im Schatzmeister-Workflow monatlich, da dies den
+Mitgliedsbeiträge erfolgt aber im Schatz\-meister-Workflow monatlich, da dies den
 kleinsten gemeinsamen Nenner für die Fälligkeit der Beiträge darstellt. Für den
 Workflow ist es nicht praktikabel, Fördermitglieder gesondert zu behandeln;
 Jahresbeiträge werden hierbei auf den entsprechenden monatlichen Anteil
@@ -627,46 +654,44 @@ Nachkommastellen entstehen, die zu Rundungsfehlern führen würden, nicht
 Eine ähnliche Formulierung soll auch für den ermäßigten Beitrag erfolgen, nur um
 auf der sicheren Seite zu sein.
 
-\paragraph{Frage:} Ist es sinnvoll, ein Symptom zu behandeln, statt solche
-Beiträge lieber jahresbezogen als einmalige Spenden zu behandeln?
-\paragraph{Antwort (chrissi\^{}):} Nein, denn es handelt sich hier um
-Mitgliedsbeiträge, nicht um Spenden. Spenden werden nicht durch Sollbuchungen erfasst,
-da hier kein Gegenkonto vorliegt. Es geht hier auch nur um die Verbuchung auf
-den entsprechenden Mitgliedskonten, auf welchem Wege die Beiträge bezahlt
-werden, ist hier irrelevant. Im Moment erfordert Schatzmeister-Workflow
-monatliche Ausgleichsbuchungen, um den korrekten Betrag am Ende des Jahres
-darstellen zu können. Bisher mussten die Beiträge der einzelnen
-Fördermitgliedschaften so verhandelt werden, dass sie im Workflow abbildbar
-sind, die neue Regelung würde Arbeitserleichterung für den Vorstand bringen.
+\question{Ist es sinnvoll, ein Symptom zu behandeln, statt solche
+Beiträge lieber jahresbezogen als einmalige Spenden zu behandeln?}
+\answer[chrissi\^{}]{Nein, denn es handelt sich hier um Mitgliedsbeiträge, nicht
+um Spenden. Spenden werden nicht durch Sollbuchungen erfasst, da hier kein
+Gegenkonto vorliegt. Es geht hier auch nur um die Verbuchung auf den
+entsprechenden Mitgliedskonten, auf welchem Wege die Beiträge bezahlt werden,
+ist hier irrelevant. Im Moment erfordert der Schatzmeister-Workflow monatliche
+Ausgleichsbuchungen, um den korrekten Betrag am Ende des Jahres darstellen zu
+können. Bisher mussten die Beiträge der einzelnen Fördermitgliedschaften so
+verhandelt werden, dass sie im Workflow abbildbar sind, die neue Regelung würde
+Arbeitserleichterung für den Vorstand bringen.}
 
-\paragraph{Frage:} Um wie viele Fördermitgliedschaften handelt es sich im
-Moment?
-\paragraph{Antwort (chrissi\^{}):} Aktuell gibt es 12 Fördermitglieder, Tendenz
-steigend.
+\question{Um wie viele Fördermitgliedschaften handelt es sich im Moment?}
+\answer[chrissi\^{}]{Aktuell gibt es 12 Fördermitglieder, Tendenz steigend.}
 
 Die vorgestellte Änderung wird auf dem Beamer gezeigt, vorgelesen und zur
 Abstimmung gestellt:
 
 \begin{resolution}{MV 2016-04}{\vote{\adopted}{21}{1}{5}}{Änderung der
-	Beitragsordnung: monatliche Beiträge sollen glatte Cent\-beträge ergeben}{}
-	§0 (Beitragssätze), Abs.\,1 der Beitragsordnung wird wie folgt gefasst:
-	\begin{quote}
-		Der reguläre Mitgliedsbeitrag für ordentliche Mitglieder beträgt 20€ pro
-		Monat. Fördermitglieder zahlen einen frei wählbaren Beitrag von mindestens
-		30€ pro Jahr. \emph{Der Jahresbeitrag muss ein Vielfaches von 12 Cent
-		betragen.}
-	\end{quote}
+  Beitragsordnung: monatliche Beiträge sollen glatte Cent\-beträge ergeben}{}
+  §0 (Beitragssätze), Abs.\,1 der Beitragsordnung wird wie folgt gefasst:
+  \begin{quote}
+    Der reguläre Mitgliedsbeitrag für ordentliche Mitglieder beträgt 20€ pro
+    Monat. Fördermitglieder zahlen einen frei wählbaren Beitrag von mindestens
+    30€ pro Jahr. \emph{Der Jahresbeitrag muss ein Vielfaches von 12 Cent
+    betragen.}
+  \end{quote}
 
-	§0 (Beitragssätze), Abs.\,3 wird wie folgt gefasst:
-	\begin{quote}
-		Sollte ein ordentliches Mitglied aus finanziellen Gründen den
-		Mitgliedsbeitrag nicht aufbringen können, kann dieses beim Vorstand einen
-		Antrag auf Ermäßigung oder Befreiung stellen. Diese gilt für maximal ein
-		Jahr und kann dann durch einen neuen Antrag erneuert werden. \emph{Der
-		ermäßigte monatliche Beitrag muss ein glatter Centbetrag sein.}
-	\end{quote}
+  §0 (Beitragssätze), Abs.\,3 wird wie folgt gefasst:
+  \begin{quote}
+    Sollte ein ordentliches Mitglied aus finanziellen Gründen den
+    Mitgliedsbeitrag nicht aufbringen können, kann dieses beim Vorstand einen
+    Antrag auf Ermäßigung oder Befreiung stellen. Diese gilt für maximal ein
+    Jahr und kann dann durch einen neuen Antrag erneuert werden. \emph{Der
+    ermäßigte monatliche Beitrag muss ein glatter Centbetrag sein.}
+  \end{quote}
 
-	(Änderungen kursiv)
+  (Änderungen kursiv)
 \end{resolution}
 
 %%%%%%%%%%%%%
@@ -699,7 +724,7 @@ Termin ist durch die Satzung vorgegeben, die eine Mitgliederversammlung einmal
 im Jahr vorschreibt, und die Amtszeiten der Vorstandsmitglieder auf ein Jahr
 begrenzt. Da das Geschäftsjahr aber mit dem Kalenderjahr übereinstimmt, ist bei
 einer Mitgliederversammlung im Dezember immer ein unvollständiges Geschäftsjahr
-berücksichtigt worden, sodass de facto ein vorläufiger Jahresabschlussim
+berücksichtigt worden, sodass de facto ein vorläufiger Jahresabschluss im
 Dezember zur Mitgliederversammlung und ein weiterer am Ende des Jahres (mit der
 neuen Amtsperiode) stattfand. Außerdem ist die Zeit vor Weihnachten und vor dem
 jährlichen Chaos Communication Congress erfahrungsgemäß stressig. Eine
@@ -709,11 +734,10 @@ Hinsichtlich der Begrenzung der Vorstands-Amtszeit auf (höchstens) ein Jahr wä
 eine zwischengeschobene Vorstandswahl in der Mitte des Jahres denkbar.
 
 Es wird kurz per Handzeichen ein Meinungsbild eingeholt. Die anwesenden
-Mitglieder sind mit großer Mehrheit dafür, den Termin in den Januar zu
-verschieben.
+Mitglieder sind überwiegend dafür, den Termin in den Januar zu verschieben.
 
 \begin{resolution}{MV 2016-05}{\consensus{\adopted}}{Termin der jährlichen
-	Mitgliederversammlung in den Januar verschieben}{}
+  Mitgliederversammlung in den Januar verschieben}{}
 \end{resolution}
 
 Es wird Sonntag, der 14.\, Januar 2018 als Termin in den Raum gestellt. Der
@@ -722,3 +746,5 @@ ankündigen.
 
 \meetingend{17:08}
 \end{document}
+
+% vim: set et ts=2 sw=2 sts=2 :

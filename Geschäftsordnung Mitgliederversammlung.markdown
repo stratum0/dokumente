@@ -34,7 +34,7 @@ Geschäftsordnung der Mitgliederversammlung
     Vorstandsvorsitzender, stellv. Vorsitzender, Schatzmeister,
     Beisitzer, Rechnungsprüfer.
     Kandidaten, die schon für ein Amt gewählt worden sind und es
-    angenommen haben, werden bei der Auswertung der nachfolgendenden
+    angenommen haben, werden bei der Auswertung der nachfolgenden
     Ämter nicht mehr berücksichtigt.
 
 7.  Gewählte Kandidaten können von der Wahl zurücktreten.

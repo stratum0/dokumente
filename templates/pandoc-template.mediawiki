@@ -5,7 +5,7 @@
   -->
 {{Hinweis|
 * Dieses Dokument als PDF: [[Media:$s0-pdf-filename$]]
-* Dieses Dokument wird in einem [https://github.com/stratum0/stratum0-dokumente/$s0-github-dokumente-filename$ Git-Repository] gepflegt. Änderungsanträge dürfen als [https://help.github.com/articles/using-pull-requests Pull Request] gestellt werden.
+* Dieses Dokument wird in einem [https://github.com/stratum0/dokumente/$s0-github-dokumente-filename$ Git-Repository] gepflegt. Änderungsanträge dürfen als [https://help.github.com/articles/using-pull-requests Pull Request] gestellt werden.
 }}
 
 <h1 style="text-align:center;border-bottom:none">$title$</h1>

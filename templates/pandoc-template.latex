@@ -205,6 +205,13 @@ $if(dir)$
   \newenvironment{LTR}{\beginL}{\endL}
 \fi
 $endif$
+\usepackage{xcolor}
+\input{scripts/vc.tex}
+\newcommand{\snvctext}{Erstellt aus
+ \href{https://github.com/stratum0/dokumente/commit/\GITAbrHash}{Git-Revision
+ \GITAbrHash} \VCModifiedTextDe}
+\hypersetup{pdfcreator={LaTeX/hyperref, from Git revision \GITAbrHash{}
+ \VCModifiedTextEn}}
 $for(header-includes)$
 $header-includes$
 $endfor$
@@ -222,7 +229,7 @@ $endif$
 $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
-\date{$date$}
+\date{$date$ \footnote{\snvctext}}
 
 \begin{document}
 $if(title)$

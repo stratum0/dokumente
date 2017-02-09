@@ -12,6 +12,7 @@ pdf: Satzung.pdf Beitragsordnung.pdf
 		-o $@ $<
 
 %.pdf: %.markdown templates/pandoc-template.latex
+	(cd scripts; sh ./vc)
 	pandoc --template=templates/pandoc-template \
 		-t latex \
 		-o $@ $<

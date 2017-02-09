@@ -8,3 +8,4 @@
 *.out
 *.fdb_latexmk
 *.ps
+scripts/vc.tex

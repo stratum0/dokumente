@@ -208,10 +208,10 @@ $endif$
 \usepackage{xcolor}
 \input{scripts/vc.tex}
 \newcommand{\snvctext}{Erstellt aus
- \href{https://github.com/stratum0/dokumente/commit/\GITAbrHash}{Git-Revision
- \GITAbrHash} \VCModifiedTextDe}
+  \href{https://github.com/stratum0/dokumente/commit/\GITAbrHash}{Git-Revision
+  \GITAbrHash} \VCModifiedTextDe}
 \hypersetup{pdfcreator={LaTeX/hyperref, from Git revision \GITAbrHash{}
- \VCModifiedTextEn}}
+  \VCModifiedTextEn}}
 $for(header-includes)$
 $header-includes$
 $endfor$

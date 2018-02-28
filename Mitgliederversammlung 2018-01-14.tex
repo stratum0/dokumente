@@ -7,17 +7,29 @@
 \usepackage{wasysym}  % for \diameter
 \usepackage{textcomp} % for €
 
+\input{scripts/vc.tex}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
 \meetingminutes{\generalassembly}{14. Januar 2018}{14:00}{Stratum~0, Hamburger
-Straße 273 A2, Braunschweig}{32 stimmberechtigte Mitglieder,\\ & keine nicht
-stimmberechtigten Mitglieder,\\ & ein Gast}{}{rohieb}
+Straße 273 A2, Braunschweig}{32 Mitglieder, 1 Gast}{}{rohieb}
 
 \title{9.\, Mitgliederversammlung}
 
 % Sowas wie "Präsentati-on" braucht doch niemand -.-
-% FIXME \hyphenpenalty=10000
+% FIXME
+\hyphenpenalty=9999
 
 \begin{document}
-\maketitle
+\maketitle\vspace{-\baselineskip}
+\tableofcontents
+\enlargethispage{\baselineskip}
+\blfootnote{Erstellt aus Git-Revision \VCRevisionMod{} --
+  \url{https://github.com/stratum0/dokumente/commit/\GITAbrHash}}
 
 %%%%%%%%%%%%
 %% TOP 0  %%
@@ -32,10 +44,10 @@ stimmberechtigten Mitglieder,\\ & ein Gast}{}{rohieb}
     \begin{itemize}[leftmargin=0cm]
       \item zum Tag der Mitgliederversammlung hat der Verein insgesamt 102
         Mitglieder, davon 92 ordentliche Mitglieder und 10 Fördermitglieder
-      \item anwesend sind 32 stimmberechtigte, ordentliche Mitglieder
+      \item anwesend sind 32 ordentliche Mitglieder, davon 32 stimmberechtigt
       \item 23\% der ordentlichen Mitglieder = \emph{21{,}16 Mitglieder für
         Beschlussfähigkeit}
-      \item 50\% der anwesenden, stimmberechtigten Mitglieder = \emph{16 Mitglieder 
+      \item 50\% der anwesenden, stimmberechtigten Mitglieder = \emph{16 Mitglieder
         für die Annahme eines Antrags}
     \end{itemize}
   \item[Beschlussfähigkeit:] 32 von geforderten 21{,}16 stimmberechtigten
@@ -184,13 +196,13 @@ Mietminderung. Laut Kontakt mit der Verwaltung gibt es im Schimmelhof gerade
 keine geeigneten Räume.
 
 Die Selbstsicht des Vorstandes wird erläutert: Er sieht sich hauptsächlich als
-Verwaltungsorgan, nicht als Regierung, sondern eher als "`erweiterter
-Briefkasten"', alles andere sollte aus der Basis kommen.  Die Mitglieder werden
-aufgefordert, im Space coole Dinge zu tun, und nicht immer den Vorstand
-entscheiden zu lassen.  Es gibt regelmäßige Arbeitstreffen zur Geschäftsführung,
-das prinzipiell offen für alle Mitglieder ist. Mögliche Aufgaben dabei sind
-z.~B.: Tooling für Finanzauswertung/-automatisierung bauen, Kontakte mit Firmen
-und Sponsoren herstellen.
+Verwaltungsorgan, nicht als "`Regierung"', sondern eher als "`erweiterter
+Briefkasten"': soviel wie möglich sollte aus der Community kommen.  Die
+Mitglieder werden aufgefordert, im Space coole Dinge zu tun, und nicht immer den
+Vorstand entscheiden zu lassen.  Es gibt regelmäßige Arbeitstreffen zur
+Geschäftsführung, das prinzipiell offen für alle Mitglieder ist. Mögliche
+Aufgaben dabei sind z.~B.: Tooling für Finanzauswertung/-automatisierung bauen,
+Kontakte mit Firmen und Sponsoren herstellen.
 
 Zum Schluss einige Screenshots von glücklichen Twitter-Benutzern, die uns
 besucht haben und es bei uns toll fanden.
@@ -220,7 +232,7 @@ werden können.
 Das Girokonto enthält auch die Rückstellungen, die später aufgelistet werden.
 
 \begin{longtable}{llr}
-  \textbf{Nr.} & \textbf{Name} & \textbf{Bestand zum 01.12.18 [€]}\\
+  \textbf{Nr.} & \textbf{Name} & \textbf{Bestand zum 09.01.2018 [€]}\\
   \midrule
   \endfirsthead
   100         & Barkasse                              &      292{,}26 \\
@@ -233,24 +245,25 @@ Das Girokonto enthält auch die Rückstellungen, die später aufgelistet werden.
 	\midrule
 	102         & Matekasse                             &      319{,}71 \\
 	\midrule
-  200024917   & Girokonto                             &  3{.}160{,}00 \\
-	\quad 200024917-1 & Rückstellungen Girokonto        & 13{.}039{,}99 \\
+  200024917   & Girokonto                             & 13{.}039{,}99 \\
+	\quad 200024917-1 & Rückstellungen Girokonto        &  3{.}160{,}00 \\
 	\midrule \midrule
               &  \textbf{Summe}               & \textbf{17{.}569{,}05} \\
 	\midrule
 \end{longtable}
 
 \paragraph{Neues seit 2017}
-Es wurde sich zwar viel zur Umsetzung vorgenommen (Automatisierung,
+Es wurde zwar vieles zur Umsetzung vorgenommen (Automatisierung,
 Regressionstests der Buchhaltung), durch den relativ kurzen Zeitraum seit der
 letzten Mitgliederversammlung ist aber noch nichts davon umgesetzt worden.
 
 Allerdings haben sich die verschwundenen 120€, deren Fehlen bei der
-Kassenprüfung 2017 bemängelt worden waren, bei der letzten Kassenrüfung wieder
-angefunden.
+Kassenprüfung 2017 bemängelt worden waren, bei der diesjährigen Kassenprüfung
+wieder angefunden.
 
 \paragraph{Überblick über die Finanzen}
-Die Zahlen beziehen sich auf den Zeitraum 1. September 2017 bis 9. Januar 2018.
+Die Zahlen beziehen sich auf den Zeitraum vom 1. September 2017 bis 9. Januar
+2018.
 
 \begin{longtable}{lr>{\textcolor{red}\bgroup}r<{\egroup}}
   \textbf{Bereich} & \textbf{Einnahmen [€]} & \textbf{Ausgaben [€]} \\
@@ -280,12 +293,13 @@ Die Zahlen beziehen sich auf den Zeitraum 1. September 2017 bis 9. Januar 2018.
   \quad davon Schneidplotter        &        0{,}00 &         0{,}00 \\
   \quad davon 3D-Drucker            &       23{,}50 &       210{,}58 \\
   \quad davon Freifunk              &  4{.}580{,}00 &       160{,}30 \\
+  \quad davon Schweißen             &       50{,}00 &         0{,}00 \\
   \quad davon CoderDojo             &        0{,}00 &         0{,}00 \\
   \midrule
-  Ideeller Bereich: Space           &        0{,}00 &   7{.}418{,}79 \\
+  Ideeller Bereich: Space           &        0{,}00 &   7{.}148{,}79 \\
   \quad davon Miete und Nebenkosten &        0{,}00 &   6{.}671{,}67 \\
-  \quad davon Verbrauchsmaterial    &        0{,}00 &    {.}168{,}54 \\
-  \quad davon Einrichtung           &        0{,}00 &    {.}308{,}58 \\
+  \quad davon Verbrauchsmaterial    &        0{,}00 &       168{,}54 \\
+  \quad davon Einrichtung           &        0{,}00 &       308{,}58 \\
   \midrule
   Vermögensverwaltung               &        0{,}00 &         0{,}00 \\
   \midrule
@@ -304,7 +318,7 @@ Die Zahlen beziehen sich auf den Zeitraum 1. September 2017 bis 9. Januar 2018.
 Im wirtschaftlichen Geschäftsbetrieb ist die übrige Club Mate enthalten, die
 nach dem Hacken Open Air von der SMFW~UG übernommen wurde. Davon ist noch viel
 übrig und kann verkauft werden. Im ideellen Bereich schlägt sich insbesondere
-die Freifunk-FÖrderung der Stadt Braunschweig nieder, die als durchlaufender
+die Freifunk-Förderung der Stadt Braunschweig nieder, die als durchlaufender
 Posten zweckgebunden behandelt wird. Alles, was nicht für Freifunk ausgegeben
 wird, muss der Stadt Braunschweig zurückerstattet werden.
 
@@ -328,7 +342,7 @@ deutlichen Überschuss:
   \textbf{Gesamt} & \textbf{\diameter} & \textbf{1{.}849} \\
 \end{tabular}
 
-\begin{tabular}{lr}
+\begin{tabular}{l>{\textcolor{red}\bgroup}r<{\egroup}}
   \multicolumn{1}{c}{\textbf{Verpflichtungen}} & \textbf{€/Monat} \\
   \midrule
   Miete, Nebenkosten      & 730 \\
@@ -363,8 +377,8 @@ Nebenkostenabrechnung für 2016 ist eingetroffen und wurde bezahlt; und der
 Abschlag wurde um 100\,€ erhöht, sodass weitere Nebenkostenabrechnungen mit
 geringerer Nachzahlung ausfallen sollten. Der Stromverbrauch bewegt sich bei ca.
 10.000\,kWh/a weiterhin auf hohem Niveau. Außerdem haben die Rechnungsprüfer
-auch dieses Jahr wieder daran erinnert, dass zwsckgebundene Spenden zeitnah
-verwendet oder zurück erstattet werden müssen.
+auch dieses Jahr wieder daran erinnert, dass zweckgebundene Spenden zeitnah
+verwendet oder zurückerstattet werden müssen.
 
 %%%%%%%%%%%%%
 %% TOP 1.3 %%
@@ -373,7 +387,7 @@ verwendet oder zurück erstattet werden müssen.
 
 shoragan und Angela berichten von der Kassenprüfung. Die Probleme der letzten
 Kassenprüfung im September haben sich alle geklärt. Bei der aktuellen Prüfung
-sind kleinere Sachen aufgefallen, z.~B. ist es vorgekommen, das Umlaufbeschlüsse
+sind kleinere Sachen aufgefallen, z.\,B. ist es vorgekommen, das Umlaufbeschlüsse
 nur auf dem Papierbeleg statt auch in der digitalen Buchhaltung referenziert
 wurden.
 
@@ -400,7 +414,7 @@ Probleme wurden aber behoben.
 Auf die Frage hin, ob jemand möchte, dass die Vorstände einzeln entlastet
 werden, meldet sich niemand.
 
-Die Versammlungsleitung bittet um Entlastung des Vortandes für die gesamte
+Die Versammlungsleitung bittet um Entlastung des Vorstandes für die gesamte
 Vergangenheit, für die der Vorstand noch nicht entlastet wurde (also die letzten
 13 Monate). Es wird per Handzeichen abgestimmt.
 
@@ -428,24 +442,9 @@ Die Versammlungsleitung wird an die Wahlleitung übergeben.
 Die Wahlleitung erklärt noch einmal den Wahlmodus, der in der Geschäftsordnung
 der Mitgliederversammlung\footnote{\url{%
 https://stratum0.org/wiki/Mitgliederversammlung/Gesch\%C3\%A4ftsordnung}}
-festgelegt wurde:
+festgelegt wurde. Als zusätzliche Regel wird vorgeschlagen:
 
 \begin{itemize}
-  \item Es handelt sich um Zustimmungswahl (Approval Voting) mit Stimmzetteln.
-    Für jede Entität auf dem Wahlzettel darf also ein Kreuz oder kein Kreuz
-    gesetzt werden.
-  \item Es gibt ein Quorum von 50\%: Die Person, die das Quorum erreicht und die
-    meisten Stimmen hat, ist gewählt.
-  \item Bei Beisitzern mit mehreren Posten werden die Posten mit den Personen,
-    die das Quorum schaffen, in absteigender Reihenfolge der Stimmen besetzt.
-  \item Falls niemand das Quorum schafft, findet eine Nachwahl für die
-    notwendigen Posten (Vorstandsvorsitzender, stellv. Vorsitzender und
-    Schatzmeister) statt.
-  \item Für alle Posten findet ein gemeinsamer Wahlgang statt, dann wird von
-    "`oben"' nach "`unten"' besetzt: Wer als Vorstandsvorsitzender schon gewählt
-    wurde, fällt für den Posten des stellv. Vorsitzenden weg, ein gewählter
-    stellv. Vorsitzender fällt für den Posten des Schatzmeisters weg, ein
-    gewählter Schatzmeister fällt für die Posten der Beisitzer weg.
   \item Zur Enthaltung wird der Stimmzettel nicht abgegeben. Ein großes Kreuz
     über den gesamten Block eines einzelnen Vorstandspostens wird von der
     Wahlleitung als Enthaltung für diesen einzelnen Posten gewertet.
@@ -491,17 +490,17 @@ Die Wahlleitung übergibt zurück an die Versammlungsleitung.
 \subsection{Wahl der Rechnungsprüfer}
 
 Die gewählten Rechnungsprüfer, shoragan und Angela, würden beide das Amt
-weiterhin übernehmen. Niemand fordert, die Rechnungsprüfer neu zu wählen, die
-Rechnungsprüfer bleiben also weiterhin im Amt.
+weiterhin übernehmen. Niemand fordert, die Rechnungsprüfer neu zu wählen.
+Die Rechnungsprüfer bleiben also weiterhin im Amt.
 
 %%%%%%%%%%%%%
 %% TOP 3.3 %%
 %%%%%%%%%%%%%
 \subsection{Wahl der Vertrauensperson}
 
-Die gewählte Vertrauensperson, Daniel Sturm, würden das Amt weiterhin
+Die gewählte Vertrauensperson, Daniel Sturm, würde das Amt weiterhin
 übernehmen, obwohl sie im letzten Jahr nicht tätig werden musste. Niemand
-fordert, die Vertrauensperson neu zu wählen, die Vertrauensperson bleibt also
+fordert, die Vertrauensperson neu zu wählen. Die Vertrauensperson bleibt also
 weiterhin im Amt.
 
 Es wird die Frage gestellt, was die Aufgabe der Vertrauensperson ist. Es stellt
@@ -512,7 +511,7 @@ als zusätzlichen Ansprechpartner neben dem Vorstand für die Vermittlung bei
 interpersonellen Konflikten im Space-Umfeld vorgeschlagen. Es wird angemerkt,
 dass das Amt der Vertrauensperson besser beworben werden sollte. Außerdem wird
 es als sinnvoll erachtet, auf den Mitgliederversammlungen einen Bericht der
-Vertrauensperson zu hören. 
+Vertrauensperson zu hören.
 
 %%%%%%%%%%%%%
 %% TOP 4   %%
@@ -554,6 +553,65 @@ Als Optionen stehen zur Verfügung:
 
 In der weiteren Diskussion werden folgende Punkte genannt:
 
+\paragraph{Mögliche Alternativen}
+\begin{itemize}
+  \item Ist es sinnvoll, Gruppen im Space örtlich auseinander zu ziehen? Bspw.
+    Trennung in "`Maker"' und "`Coder"'? \\
+    Dagegen: alles an einem Ort zu haben ist schon bequem. Leute kommen in den
+    Space, machen sich Essen, gehen dann in die Werkstatt, und coden danach ein
+    bisschen. Es gibt personelle Überschneidungen in vielen Themenbereichen.
+  \item Ein Mitglied hat nicht das Gefühl, dass hier kein Platz ist. Es kann
+    immer irgendwie Platz geschaffen bzw. Zeug besser angeordnet werden.
+  \item Frage nach weiteren Alternativen: Die IEK-Räumlichkeit unten im Haus ist
+    im Moment nicht verfügbar (siehe Ausführungen im Jahresbericht), und auch
+    teurer. reneger telefoniert etwa einmal im Monat mit der Hausverwaltung und
+    hört sich nach Alternativen um. Außerdem wurde uns das TanzSportZentrum
+    angeboten, allgemeine Stimmung ist aber "`nicht schon wieder im dritten
+    Stock"'.
+  \item Wie werden die Prioritäten gesetzt? Nähe zur Uni wird als großes Plus
+    gesehen, ebenso relative Nähe zur Innenstadt, Erreichbarkeit mit ÖPNV und
+    Nähe zur Autobahn. Diese Standortvorteile werd jedoch vermutlich an keinem
+    weiteren Standort in Braunschweig zusammenfallen.
+\end{itemize}
+
+\paragraph{Finanzierung}
+\begin{itemize}
+  \item Vor dem letzten Umzug wurde ein finanzieller Puffer von
+    Mitgliedsbeiträgen gebildet, die freiwillig im Voraus gezahlt wurden. Dieser
+    Puffer konnte dann für einmalige Kosten wie Einrichtungsgegenstände
+    verwendet werden.
+
+    Seit dem Bezug des Space 2.0 wurden aut Schatzmeister etwa 7000\,€ für
+    Einrichtung ausgegeben, einiges davon könnte nach Umzug aber weiter benutzt
+    werden.
+
+  \item Es wäre auch denkbar, dass es Mitglieder gibt, die für einen
+    vorhersehbaren Zeitraum ihren monatlichen Beitrag freiwillig erhöhen, oder
+    dass laufende Kosten aus Spenden von Firmensponsoren getragen werden.
+    Freiwillig erhöhte Mitgliedsbeiträge zählen hierbei zwar formal zu den
+    Mitgliedsbeiträgen, der Verein hat aber keine Zusicherung, dass diese
+    freiwillige Erhöhung bestehen bleibt. Insofern müssen sie funktional wie
+    Spenden behandelt werden.
+
+    Dazu wird angemerkt, dass ein freiwillig erhöhter Mitgliedsbeitrag mit
+    entsprechender Zweckbindung für ein definiertes Ziel (Vergrößerung der
+    Räumlichkeit) versehen werden sollte, sodass dieser nicht für
+    allgemeine Kosten verplant wird.
+
+  \item Mitgliedsbeiträge werden generell als verlässlichere Quelle gegenüber
+    Firmenspenden gesehen, da es sich um viele kleinere Beträge handelt, die
+    nicht in so großem Rahmen fluktuieren.
+
+    Bei höheren Einnahmen durch freiwillig erhöhte Mitgliedsbeiträge ist
+    der Verein auch nicht mehr so sehr auf einzelne Großspenden angewiesen.
+
+  \item Falls zusätzlicher Raum angemietet wird (statt Komplettumzug),
+    könnten durchaus Spenden investiert werden, weil der zusätzliche Raum
+    später wieder relativ einfach abgestoßen werden kann, ohne dass der Verein
+    ohne Räumlichkeit dasteht.
+\end{itemize}
+
+\paragraph{Mitgliederwachstum}
 \begin{itemize}
   \item Vor dem Umzug in den Space 2.0 standen wir vor einer ähnlichen
     Situation, es gab nicht genug Mitglieder für eine Finanzierung. Die Frage
@@ -562,77 +620,44 @@ In der weiteren Diskussion werden folgende Punkte genannt:
   \item Die aktuelle Mitgliederzahl wurde nahezu ohne Werbung erreicht
     (bis auf Mundpropaganda), durch Werbung könnte sich die Mitgliederzahl noch
     weiter steigern lassen.
-  \item Seit dem Bezug des Space 2.0 wurden etwa 7000\,€ für Einrichtung
-    ausgegeben, einiges davon könnte nach Umzug aber weiter benutzt werden.
-  \item Ist es sinnvoll, Gruppen im Space örtlich auseinander zu ziehen? Bspw.
-    Trennung in "`Maker"' und "`Coder"'? \\
-    Dagegen: alles an einem Ort zu haben ist schon bequem. Leute kommen in den
-    Space, machen sich Essen, gehen dann in die Werkstatt, und coden danach ein
-    bisschen. Es gibt personelle Überschneidungen in allen Bereichen.
-  \item Eine Person hat nicht das Gefühl, dass hier kein Platz ist. Es kann
-    immer irgendwie Platz geschaffen bzw. Zeug besser angeordnet werden.
-  \item Frage nach weiteren Alternativen: IEK-Räumlichkeit unten im Haus ist im
-    Moment nicht verfügbar (siehe Ausführungen im Jahresbericht), und auch
-    teurer. reneger telefoniert etwa einmal im Monat mit der Hausverwaltung und
-    hört sich nach Alternativen um. Außerdem wurde uns das TanzSportZentrum
-    angeboten, allgemeine Stimmung ist aber "`nicht schon wieder im dritten
-    Stock"'.
+  \item Mitgliederwachstum ist im Moment offenbar vorhanden (siehe
+    Finanzbericht), man könnte extrapolieren und entsprechend auf die Zukunft
+    planen.
 \end{itemize}
 
-Die Diskussion führt zu zwei Meinungsbildern:
+Die Diskussion führt zu zwei generellen Meinungsbildern, die für die weitere
+Suche nach konkreten Objekten als Anhaltspunkt dienen sollen.
 
+\begin{resolution}{MV 2018-02}{\consensus{\adopted}}{Meinungsbild: Wird
+  generell eine Vergrößerung des Spaces gewünscht?}{}
+  Das Meinungsbild wird mit großer Mehrheit positiv beantwortet.
+\end{resolution}
 
+\begin{resolution}{MV 2018-02}{\consensus{\adopted}}{Meinungsbild: Soll nach
+  Objekten gesucht werden, deren laufende Kosten die regulären
+  Mitgliedsbeiträge übersteigen?}{}
 
+  Der Verein würde in diesem Fall das Risiko eingehen, laufende Verpflichtung
+  aus (nicht zugesicherten) Spenden begleichen zu müssen, wenn auch nur
+  übergangsweise, bis die Mitgliederzahl wächst.
 
-* meinungsbild: wollen wir uns vergrößern? viel zustimmung, vermutlich sogar mehrheit.
-		* falls es konkretes gibt, wird es wieder eine MV dazu geben.
-		* frage: wie sind die prioritäten? Uni-nah? 
-			* ja, location ist ein großer faktor. innenstadt-/uninah und nah an der autobahn ist ein großes plus für uns.
+  Es wird die Frage gestellt, ob hier die Rücklage für Mietausfall
+  genutzt werden kann. Der Vorstand sieht dies nicht so, da diese Rücklage nur
+  zur kurzfristigen Liquidation bei größeren Einnahmeausfällen gedacht ist und
+  auch weiterhin bestehen bleiben soll, um die laufenden Geschäfte im Notfall
+  sauber abzuwickeln.
 
+  Das Meinungsbild fällt positiv aus.
+\end{resolution}
 
-- meinungsbild: wollen wir als verein das risiko eingehen, monatliche
-  verpflichtung aus (nicht zugesicherten) spenden begleichen zu müssen?
-  - frage: war dafür nicht die rücklage für mietausfall gedacht?
-    - nicht als ständige verpflichtung, nur im falle des falles zur kurzfristigen liquidation
-    - anmerkung: mehr spenden zurücklegen, um rücklagen zu bilden? puffer über
-      zeit, falls spendenaufkommen sich in einem jahr verringert.
-    - anmerkung: was man sich nicht leisten kann, soll man sich nicht kaufen.
-    - zum meinungsbild melden sich etwa vier leute. auch zur frage, nur
-      übergangsweise spenden zu investieren, ähnliches meinungsbild.
-  - anmerkung: aktueller standortvorteil wird vermutlich an keinem weiteren
-    standort in braunschweig zusammentreffen.
-  - anmerkung: meinungsbild ohne ein konkretes objekt im sinn ist schwer zu beurteilen.
-    - für den verein aber immerhin ein wichtiger punkt bei der weiteren suche
-      nach objekten. wollen wir objekte suchen, die wir uns aktuell nicht leisten
-      können, oder nicht?
-  - anmerkung: vor umzug in space2 wurde puffer von mitgliedern in form von
-    vorauszahlung auf den mitgliedsbeitrag gebildet, zb für einmalige
-    einrichtungsgegenstände
-  - anmerkung: mitglieder, die sich das leisten könnten, könnten für einen
-    voraussehbaren zeitraum ihren beitrag erhöhen.
-  - anmerkung: wachstum ist im moment offenbar vorhanden (siehe finanzbericht),
-    man könnte extrapolieren und entsprechend auf die zukunft planen.
-  - anmerkung: zu spenden: falls eine organisation ihre großspende nicht mehr
-    für die zukunft zusagt, fliegt man auf die füße. erhöhter mitgliedsbeitrag ist
-    sinnvollere investition, da viele kleinere beträge, die nicht so schnell
-    fluktieren sollten
-  - anmerkung: wenn räumlichkeit erweitert werden soll (statt komplettumzug),
-    kann man durchaus spenden investieren, weil man die zusätzliche räumlichkeit
-    später wieder schnell abgestoßen werden kann.
-  - anmerkung: man sollte wissen, wie viele spenden dafür akquiriert werden
-    müssten. durch mehr erhöhte mitgliederbeiträge ist man auch nicht mehr so auf
-    großspenden überwiesen.
-  - anmerkung: beitrag erhöhen ohne ziel macht wenig sinn, sondern wird dann
-    eher "allgemein" verwendet. lieber eine zusage für erhöhung zur erreichung
-    eines definitiven ziels
-  - meinungsbild wird nochmal gestellt: wollen wir uns nach räumlichkeiten
-    auscchau halten, die unsere monatlichen mitgliedsbeiträge übersteigt? bei
-    finanzierung zb durch freiwillige erhöhung der mitgliedsbeiträge oder
-    großspenden? meinungsbild fällt diesmal positiv aus.
-- generell: ermutigung an alle mitglieder, bei der suche mitzumachen, vorstand
-  ist eher für formalfoo zuständig und nicht dafür, alle TODOs zu übernehmen :)
-  - beteiligung an vorstandssitzungen und arbeitstreffen sind auch sehr gern
-    gesehen und ihr könnt auch eigene aspekte einbringen
+Falls sich konkrete Optionen ergeben, wird es dazu auf jeden Fall noch eine
+weitere Mitgliederversammlung geben.
+
+Alle Mitglieder werden generell ermutigt, sich bei der Suche nach Objekten
+einzubringen. Der Vorstand sieht sich eher für Formalitäten zuständig und nicht
+dafür, alle anfallenden TODOs zu übernehmen. Hierbei wird auch nochmal auf die
+monatlichen Geschäftsführungs-Arbeitstreffen verwiesen, die zu diesem Zweck der
+Community-Beteiligung eingeführt wurden.
 
 %%%%%%%%%%%%%
 %% TOP 4.2 %%

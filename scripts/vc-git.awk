@@ -22,9 +22,9 @@ script=="log" && /^Committer Date:/ { CommitterDate = substr($0, 2+match($0, ":"
 
 ### Process output of "git status".
 ### Changed index?
-script=="status" && /^# Changes to be committed:/ { modified = 1 }
+script=="status" && /Changes to be committed:/ { modified = 1 }
 ### Unstaged modifications?
-script=="status" && /^# Changed but not updated:/ { modified = 2 }
+script=="status" && /Changed but not updated:/ { modified = 2 }
 
 END {
 	### Process output of "git log".
@@ -62,8 +62,8 @@ END {
 		print "\\gdef\\VCDateISO{" DateISO "}%"
 		print "\\gdef\\VCDateTEX{" DateTEX "}%"
 		print "\\gdef\\VCTime{" Time "}%"
-		print "\\gdef\\VCModifiedTextEn{\\textcolor{red}{with local modifications!}}%"
-		print "\\gdef\\VCModifiedTextDe{\\textcolor{red}{mit lokalen Änderungen!}}%"
+		print "\\gdef\\VCModifiedTextEn{\\textcolor{red}{ with local modifications!}}%"
+		print "\\gdef\\VCModifiedTextDe{\\textcolor{red}{ mit lokalen Änderungen!}}%"
 		print "%%% Assume clean working copy."
 		print "\\gdef\\VCModified{0}%"
 		print "\\gdef\\VCRevisionMod{\\VCRevision}%"

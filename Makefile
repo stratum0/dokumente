@@ -35,7 +35,8 @@ clean:
 		$(addsuffix .fls,$(JOBNAMES)) \
 		$(addsuffix .log,$(JOBNAMES)) \
 		$(addsuffix .out,$(JOBNAMES)) \
-		$(addsuffix .toc,$(JOBNAMES))
+		$(addsuffix .toc,$(JOBNAMES)) \
+		vc.tex
 
 mrproper: clean
 	rm -f $(PDFS)
@@ -43,7 +44,10 @@ mrproper: clean
 preview:
 	$(latexmk) -pvc $(LATESTJOB).tex
 
-%.pdf: %.tex
+vc.tex: .git/index .git/HEAD scripts/vc scripts/vc-git.awk
+	cd scripts; sh ./vc -m && mv vc.tex ..
+
+%.pdf: %.tex vc.tex
 	$(latexmk) $(if $(PVC),-pvc,-pvc-) "$<"
 
 # vim: ft=make ts=8 noet

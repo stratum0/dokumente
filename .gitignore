@@ -10,3 +10,5 @@
 *.ps
 scripts/vc.tex
 vc.tex
+/s0artcl.cls
+/s0minutes.cls

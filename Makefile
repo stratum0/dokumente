@@ -44,10 +44,18 @@ mrproper: clean
 preview:
 	$(latexmk) -pvc $(LATESTJOB).tex
 
+stratum0-latex/stratum0-latex.ins: .gitmodules
+	git submodule update --init
+
+s0artcl.cls s0minutes.cls: stratum0-latex/stratum0-latex.ins stratum0-latex/s0artcl.dtx stratum0-latex/s0minutes.dtx stratum0-latex/stratum0-latex.ins
+	${MAKE} -C stratum0-latex
+	if [ ! -h s0artcl.cls   ]; then ln -s stratum0-latex/s0artcl.cls   . ; fi
+	if [ ! -h s0minutes.cls ]; then ln -s stratum0-latex/s0minutes.cls . ; fi
+
 vc.tex: .git/index .git/HEAD scripts/vc scripts/vc-git.awk
 	cd scripts; sh ./vc -m && mv vc.tex ..
 
-%.pdf: %.tex vc.tex
+%.pdf: %.tex vc.tex s0minutes.cls s0artcl.cls
 	$(latexmk) $(if $(PVC),-pvc,-pvc-) "$<"
 
 # vim: ft=make ts=8 noet

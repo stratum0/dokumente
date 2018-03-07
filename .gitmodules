@@ -1,0 +1,3 @@
+[submodule "stratum0-latex"]
+	path = stratum0-latex
+	url = https://gitli.stratum0.org/rohieb/stratum0-latex.git
